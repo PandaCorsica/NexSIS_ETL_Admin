@@ -1,0 +1,405 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 30,
+	"markerBody": 60,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "listScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"background": {
+					"type": "rectangle",
+					"fill": "automatic",
+					"stroke": "transparent",
+					"top": 30,
+					"height": 30,
+					"left": 0,
+					"right": 1830
+				},
+				"label_ID": {
+					"type": "text",
+					"text": "ID",
+					"top": 10,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID": {
+					"type": "input",
+					"dataSource": "[IMPORT_UF:20]ID:1",
+					"top": 37,
+					"left": 10,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_1": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 265
+				},
+				"label_Cle_Corps": {
+					"type": "text",
+					"text": "Cle_Corps",
+					"top": 10,
+					"left": 270,
+					"width": 100,
+					"height": 17
+				},
+				"field_Cle_Corps": {
+					"type": "input",
+					"dataSource": "[IMPORT_UF:20]Cle_Corps:2",
+					"top": 37,
+					"left": 270,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_2": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 525
+				},
+				"label_Non_Corps": {
+					"type": "text",
+					"text": "Non_Corps",
+					"top": 10,
+					"left": 530,
+					"width": 100,
+					"height": 17
+				},
+				"field_Non_Corps": {
+					"type": "input",
+					"dataSource": "[IMPORT_UF:20]Non_Corps:3",
+					"top": 37,
+					"left": 530,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_3": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 785
+				},
+				"label_Code_Corps": {
+					"type": "text",
+					"text": "Code_Corps",
+					"top": 10,
+					"left": 790,
+					"width": 100,
+					"height": 17
+				},
+				"field_Code_Corps": {
+					"type": "input",
+					"dataSource": "[IMPORT_UF:20]Code_Corps:4",
+					"top": 37,
+					"left": 790,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_4": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1045
+				},
+				"label_Type_Centre": {
+					"type": "text",
+					"text": "Type_Centre",
+					"top": 10,
+					"left": 1050,
+					"width": 100,
+					"height": 17
+				},
+				"field_Type_Centre": {
+					"type": "input",
+					"dataSource": "[IMPORT_UF:20]Type_Centre:5",
+					"top": 37,
+					"left": 1050,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_5": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1305
+				},
+				"label_Code_Compagnie": {
+					"type": "text",
+					"text": "Code_Compagnie",
+					"top": 10,
+					"left": 1310,
+					"width": 100,
+					"height": 17
+				},
+				"field_Code_Compagnie": {
+					"type": "input",
+					"dataSource": "[IMPORT_UF:20]Code_Compagnie:6",
+					"top": 37,
+					"left": 1310,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_6": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1565
+				},
+				"label_Code_Gpt": {
+					"type": "text",
+					"text": "Code_Gpt",
+					"top": 10,
+					"left": 1570,
+					"width": 100,
+					"height": 17
+				},
+				"field_Code_Gpt": {
+					"type": "input",
+					"dataSource": "[IMPORT_UF:20]Code_Gpt:7",
+					"top": 37,
+					"left": 1570,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"background1": {
+					"type": "rectangle",
+					"fill": "automatic",
+					"stroke": "transparent",
+					"top": 30,
+					"height": 30,
+					"left": 0,
+					"right": 2350
+				},
+				"label_ID1": {
+					"type": "text",
+					"text": "ID",
+					"top": 10,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID1": {
+					"type": "input",
+					"dataSource": "[IMPORT_CIS:20]ID:1",
+					"top": 37,
+					"left": 10,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_7": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 265
+				},
+				"label_Cle_Corps1": {
+					"type": "text",
+					"text": "Cle_Corps",
+					"top": 10,
+					"left": 270,
+					"width": 100,
+					"height": 17
+				},
+				"field_Cle_Corps1": {
+					"type": "input",
+					"dataSource": "[IMPORT_CIS:20]Cle_Corps:2",
+					"top": 37,
+					"left": 270,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_8": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 525
+				},
+				"label_Non_Corps1": {
+					"type": "text",
+					"text": "Non_Corps",
+					"top": 10,
+					"left": 530,
+					"width": 100,
+					"height": 17
+				},
+				"field_Non_Corps1": {
+					"type": "input",
+					"dataSource": "[IMPORT_CIS:20]Non_Corps:3",
+					"top": 37,
+					"left": 530,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_9": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 785
+				},
+				"label_Code_Corps1": {
+					"type": "text",
+					"text": "Code_Corps",
+					"top": 10,
+					"left": 790,
+					"width": 100,
+					"height": 17
+				},
+				"field_Code_Corps1": {
+					"type": "input",
+					"dataSource": "[IMPORT_CIS:20]Code_Corps:4",
+					"top": 37,
+					"left": 790,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_10": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1045
+				},
+				"label_Type_Centre1": {
+					"type": "text",
+					"text": "Type_Centre",
+					"top": 10,
+					"left": 1050,
+					"width": 100,
+					"height": 17
+				},
+				"field_Type_Centre1": {
+					"type": "input",
+					"dataSource": "[IMPORT_CIS:20]Type_Centre:5",
+					"top": 37,
+					"left": 1050,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_11": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1305
+				},
+				"label_Code_Compagnie1": {
+					"type": "text",
+					"text": "Code_Compagnie",
+					"top": 10,
+					"left": 1310,
+					"width": 100,
+					"height": 17
+				},
+				"field_Code_Compagnie1": {
+					"type": "input",
+					"dataSource": "[IMPORT_CIS:20]Code_Compagnie:6",
+					"top": 37,
+					"left": 1310,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_12": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1565
+				},
+				"label_Code_Gpt1": {
+					"type": "text",
+					"text": "Code_Gpt",
+					"top": 10,
+					"left": 1570,
+					"width": 100,
+					"height": 17
+				},
+				"field_Code_Gpt1": {
+					"type": "input",
+					"dataSource": "[IMPORT_CIS:20]Code_Gpt:7",
+					"top": 37,
+					"left": 1570,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_13": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1825
+				},
+				"label_Abrege": {
+					"type": "text",
+					"text": "Abrege",
+					"top": 10,
+					"left": 1830,
+					"width": 100,
+					"height": 17
+				},
+				"field_Abrege": {
+					"type": "input",
+					"dataSource": "[IMPORT_CIS:20]Abrege:8",
+					"top": 37,
+					"left": 1830,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_14": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2085
+				},
+				"label_toDelete": {
+					"type": "text",
+					"text": "toDelete",
+					"top": 10,
+					"left": 2090,
+					"width": 100,
+					"height": 17
+				},
+				"field_toDelete": {
+					"type": "input",
+					"dataSource": "[IMPORT_CIS:20]toDelete:9",
+					"top": 37,
+					"left": 2090,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				}
+			}
+		}
+	],
+	"geometryStamp": 2
+}

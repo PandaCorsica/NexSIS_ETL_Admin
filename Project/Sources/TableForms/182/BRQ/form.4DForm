@@ -1,0 +1,977 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad"
+	],
+	"destination": "listPrinter",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 149,
+					"left": 20,
+					"width": 274,
+					"height": 36,
+					"borderRadius": 10,
+					"fill": "#B5D6D9"
+				},
+				"Image statique2": {
+					"type": "picture",
+					"top": 14,
+					"left": 20,
+					"width": 74,
+					"height": 94,
+					"picture": "/PACKAGE/WebFolder/logo_SDIS_ss_Fonf.jpeg",
+					"pictureFormat": "scaled"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 184,
+					"left": 19,
+					"width": 274,
+					"height": 197,
+					"borderRadius": 10
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "Interventions particulières",
+					"top": 510,
+					"left": 37,
+					"width": 538,
+					"height": 27,
+					"fontFamily": "Cambria",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "Bilan de la période",
+					"top": 120,
+					"left": 32,
+					"width": 253,
+					"height": 21,
+					"fontWeight": "bold",
+					"fontFamily": "Cambria",
+					"fontSize": 18,
+					"textAlign": "center"
+				},
+				"Texte3": {
+					"type": "text",
+					"text": "Bilan depuis le 1er janvier",
+					"top": 120,
+					"left": 313,
+					"width": 253,
+					"height": 21,
+					"fontFamily": "Cambria",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"Texte4": {
+					"type": "text",
+					"text": "Commentaire général",
+					"top": 391,
+					"left": 35,
+					"width": 214,
+					"height": 15,
+					"fontFamily": "Cambria",
+					"fontSize": 18,
+					"fontWeight": "bold"
+				},
+				"Texte5": {
+					"type": "text",
+					"text": "TOTAL ......................................................\r\rSecours à personnes .............................\rAccidents de circulation .....................\rIncendies ..................................................\r       dont incendies de végétation ....\rExplosions ...............................................\rRisques technologiques ......................\rRisques naturels ....................................\rAssistances aux biens et animaux ...\rRecherches ...............................................\rMissions police ........................................\rMissions diverses ...................................",
+					"top": 158,
+					"left": 32,
+					"width": 217,
+					"height": 224,
+					"fontFamily": "Cambria",
+					"fontSize": 14
+				},
+				"Variable": {
+					"type": "input",
+					"top": 159,
+					"left": 246,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.totaljour",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"fill": "transparent",
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 189,
+					"left": 246,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.sapjour",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 206,
+					"left": 246,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.avpjour",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 223,
+					"left": 246,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.incjour",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 240,
+					"left": 246,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.incffjour",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 256,
+					"left": 246,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.explojour",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 273,
+					"left": 246,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.rtjour",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 289,
+					"left": 246,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.rnjour",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 303,
+					"left": 246,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.biensjour",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 320,
+					"left": 246,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.rechjour",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 336,
+					"left": 246,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.policejour",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 352,
+					"left": 246,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.divjour",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 149,
+					"left": 301,
+					"width": 274,
+					"height": 36,
+					"borderRadius": 10,
+					"fill": "#B5D6D9"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 184,
+					"left": 300,
+					"width": 274,
+					"height": 197,
+					"borderRadius": 10
+				},
+				"Texte6": {
+					"type": "text",
+					"text": "TOTAL ......................................................\r\rSecours à personnes .............................\rAccidents de circulation .....................\rIncendies ..................................................\r       dont incendies de végétation ....\rExplosions ...............................................\rRisques technologiques ......................\rRisques naturels ....................................\rAssistances aux biens et animaux ...\rRecherches ...............................................\rMissions police ........................................\rMissions diverses ...................................",
+					"top": 158,
+					"left": 313,
+					"width": 217,
+					"height": 224,
+					"fontFamily": "Cambria",
+					"fontSize": 14
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 159,
+					"left": 527,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.totalan",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"fill": "transparent",
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "right"
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 189,
+					"left": 528,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.sapan",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 206,
+					"left": 528,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.avpan",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 222,
+					"left": 528,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.incan",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 239,
+					"left": 528,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.incffan",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 255,
+					"left": 528,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.exploan",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable18": {
+					"type": "input",
+					"top": 271,
+					"left": 528,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.rtan",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable19": {
+					"type": "input",
+					"top": 288,
+					"left": 528,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.rnan",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable20": {
+					"type": "input",
+					"top": 303,
+					"left": 528,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.biensan",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable21": {
+					"type": "input",
+					"top": 319,
+					"left": 528,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.rechan",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable22": {
+					"type": "input",
+					"top": 335,
+					"left": 528,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.policean",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 352,
+					"left": 528,
+					"width": 42,
+					"height": 17,
+					"dataSource": "vCumuls.divan",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"textAlign": "right"
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 417,
+					"left": 37,
+					"width": 537,
+					"height": 90,
+					"dataSource": "vcommentaire",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 12,
+					"sizingY": "fixed",
+					"borderStyle": "system",
+					"enterable": false,
+					"multiline": "automatic",
+					"hideFocusRing": false,
+					"focusable": false,
+					"printFrame": "variable"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 540,
+					"left": 36,
+					"width": 539,
+					"height": 229
+				},
+				"Texte7": {
+					"type": "text",
+					"text": "Numéro :",
+					"top": 545,
+					"left": 50,
+					"width": 150,
+					"height": 15,
+					"fontWeight": "bold",
+					"fontSize": 12
+				},
+				"Texte8": {
+					"type": "text",
+					"text": "Commune :",
+					"top": 630,
+					"left": 50,
+					"width": 67,
+					"height": 15,
+					"fontWeight": "bold",
+					"fontSize": 12
+				},
+				"Variable25": {
+					"type": "input",
+					"top": 24,
+					"left": 122,
+					"width": 444,
+					"height": 44,
+					"dataSource": "vTitre",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 18,
+					"fill": "transparent",
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"Variable26": {
+					"type": "input",
+					"top": 76,
+					"left": 95,
+					"width": 471,
+					"height": 17,
+					"dataSource": "vTitre2",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"fontFamily": "Cambria",
+					"fontSize": 14,
+					"fill": "transparent",
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"Zone de saisie": {
+					"type": "input",
+					"left": 105,
+					"top": 546,
+					"width": 144,
+					"height": 16,
+					"dataSource": "[DONNEES_BRQ:182]numinter:2",
+					"enterable": false,
+					"focusable": false,
+					"textAlign": "left",
+					"borderStyle": "none",
+					"fontSize": 12
+				},
+				"Zone de saisie1": {
+					"type": "input",
+					"left": 114,
+					"top": 630,
+					"width": 150,
+					"height": 16,
+					"dataSource": "[DONNEES_BRQ:182]commune:6",
+					"textAlign": "left",
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fontSize": 12
+				},
+				"Texte": {
+					"type": "text",
+					"text": "Date / Heure :",
+					"top": 545,
+					"left": 333,
+					"width": 82,
+					"height": 15,
+					"fontWeight": "bold",
+					"fontSize": 12
+				},
+				"Texte9": {
+					"type": "text",
+					"text": "Moyens engagés :",
+					"top": 672,
+					"left": 50,
+					"width": 103,
+					"height": 15,
+					"fontWeight": "bold",
+					"fontSize": 12
+				},
+				"Texte10": {
+					"type": "text",
+					"text": "Centres :",
+					"top": 651,
+					"left": 50,
+					"width": 130,
+					"height": 15,
+					"fontWeight": "bold",
+					"fontSize": 12
+				},
+				"Texte11": {
+					"type": "text",
+					"text": "Commentaire :",
+					"top": 692,
+					"left": 50,
+					"width": 103,
+					"height": 15,
+					"fontWeight": "bold",
+					"fontSize": 12
+				},
+				"Texte12": {
+					"type": "text",
+					"text": "Adresse :",
+					"top": 609,
+					"left": 50,
+					"width": 58,
+					"height": 15,
+					"fontWeight": "bold",
+					"fontSize": 12
+				},
+				"Zone de saisie2": {
+					"type": "input",
+					"left": 105,
+					"top": 609,
+					"width": 455,
+					"height": 16,
+					"dataSource": "[DONNEES_BRQ:182]adresse:7",
+					"printFrame": "variable",
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fontSize": 12
+				},
+				"Zone de saisie3": {
+					"type": "input",
+					"left": 105,
+					"top": 651,
+					"width": 461,
+					"height": 16,
+					"dataSource": "[DONNEES_BRQ:182]centres:12",
+					"printFrame": "variable",
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fontSize": 12
+				},
+				"Zone de saisie4": {
+					"type": "input",
+					"left": 141,
+					"top": 692,
+					"width": 419,
+					"height": 64,
+					"dataSource": "[DONNEES_BRQ:182]commentaire:3",
+					"printFrame": "variable",
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"multiline": "yes",
+					"wordwrap": "normal",
+					"sizingY": "fixed",
+					"fontSize": 12
+				},
+				"Zone de saisie5": {
+					"type": "input",
+					"left": 95,
+					"top": 588,
+					"width": 465,
+					"height": 16,
+					"dataSource": "[DONNEES_BRQ:182]motif:8",
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fontSize": 12
+				},
+				"Zone de saisie6": {
+					"type": "input",
+					"left": 152,
+					"top": 672,
+					"width": 408,
+					"height": 16,
+					"dataSource": "[DONNEES_BRQ:182]moyens:11",
+					"printFrame": "variable",
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fontSize": 12
+				},
+				"Zone de saisie7": {
+					"type": "input",
+					"left": 411,
+					"top": 544,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[DONNEES_BRQ:182]dateInter:4",
+					"dataSourceTypeHint": "date",
+					"multiline": "no",
+					"contextMenu": "none",
+					"enterable": false,
+					"focusable": false,
+					"textAlign": "right",
+					"borderStyle": "none",
+					"fontSize": 12
+				},
+				"Zone de saisie8": {
+					"type": "input",
+					"left": 494,
+					"top": 544,
+					"width": 66,
+					"height": 16,
+					"dataSource": "[DONNEES_BRQ:182]heureInter:5",
+					"dataSourceTypeHint": "time",
+					"textAlign": "left",
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fontSize": 12
+				},
+				"Texte13": {
+					"type": "text",
+					"text": "Motif :",
+					"top": 588,
+					"left": 50,
+					"width": 150,
+					"height": 15,
+					"fontWeight": "bold",
+					"fontSize": 12
+				},
+				"Texte14": {
+					"type": "text",
+					"text": "/",
+					"top": 545,
+					"left": 485,
+					"width": 7,
+					"height": 15,
+					"fontSize": 12
+				},
+				"Texte15": {
+					"type": "text",
+					"text": "Diffusion interdite aux personnes non autorisées",
+					"top": 782,
+					"left": 32,
+					"width": 542,
+					"height": 15,
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"Zone de saisie9": {
+					"type": "input",
+					"left": 115,
+					"top": 566,
+					"width": 445,
+					"height": 16,
+					"dataSource": "vtype",
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"fontSize": 12
+				},
+				"Texte16": {
+					"type": "text",
+					"text": "Categorie :",
+					"top": 566,
+					"left": 50,
+					"width": 150,
+					"height": 15,
+					"fontWeight": "bold",
+					"fontSize": 12
+				}
+			}
+		}
+	],
+	"geometryStamp": 660,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"markerBody": 773,
+	"markerBreak": 804,
+	"markerFooter": 807,
+	"markerHeader": 537,
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "0mm",
+		"paperHeight": "0mm"
+	}
+}

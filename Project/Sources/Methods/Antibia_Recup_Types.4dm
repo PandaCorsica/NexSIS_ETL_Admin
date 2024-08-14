@@ -1,0 +1,24 @@
+//%attributes = {}
+ARRAY INTEGER:C220($TYPCle; 0)
+ARRAY TEXT:C222($TYPnom; 0)
+
+ALL RECORDS:C47([IMPORT_TYPE:23])
+DELETE SELECTION:C66([IMPORT_TYPE:23])
+
+ConnexionSQL
+
+If (OK=1)
+	
+	SQL EXECUTE:C820("SELECT CODIF, COR_TYP FROM Tabtypco"; $TYPCle; $TYPnom)
+	SQL LOAD RECORD:C822(SQL tous les enregistrements:K49:10)
+	For ($i; 1; Size of array:C274($TYPCle))
+		CREATE RECORD:C68([IMPORT_TYPE:23])
+		[IMPORT_TYPE:23]cle_type:2:=String:C10($TYPCle{$i})
+		[IMPORT_TYPE:23]type:3:=$TYPnom{$i}
+		SAVE RECORD:C53([IMPORT_TYPE:23])
+	End for 
+	SQL LOGOUT:C872
+	
+	
+End if 
+

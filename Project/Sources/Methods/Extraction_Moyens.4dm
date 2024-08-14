@@ -1,0 +1,20 @@
+//%attributes = {}
+ALL RECORDS:C47([nexsis_engin:152])
+$doc:=Create document:C266(""; ".txt")
+SEND PACKET:C103($doc; "Nom engin"+Char:C90(Tabulation:K15:37))
+SEND PACKET:C103($doc; "Affectation"+Char:C90(Tabulation:K15:37))
+SEND PACKET:C103($doc; "Type"+Char:C90(Tabulation:K15:37))
+SEND PACKET:C103($doc; "Immatriculation"+Char:C90(Tabulation:K15:37))
+SEND PACKET:C103($doc; "RFGI"+Char:C90(Retour à la ligne:K15:40))
+While (Not:C34(End selection:C36([nexsis_engin:152])))
+	SEND PACKET:C103($doc; [nexsis_engin:152]nom_moyen:3+Char:C90(Tabulation:K15:37))
+	SEND PACKET:C103($doc; Replace string:C233([nexsis_engin:152]code_unite_fonctionnelle_operat:5; "02a-"; "")+Char:C90(Tabulation:K15:37))
+	QUERY:C277([IMPORT_MOYENS:43]; [IMPORT_MOYENS:43]id_Moyen:2=[nexsis_engin:152]nom_moyen:3)
+	SEND PACKET:C103($doc; [IMPORT_MOYENS:43]vecteur:3+Char:C90(Tabulation:K15:37))
+	SEND PACKET:C103($doc; [IMPORT_MOYENS:43]immatriculation:6+Char:C90(Tabulation:K15:37))
+	QUERY:C277([nexsis_radio:142]; [nexsis_radio:142]identifiant:5=[nexsis_engin:152]code_moyen:2)
+	SEND PACKET:C103($doc; [nexsis_radio:142]rfgi:2+Char:C90(Retour à la ligne:K15:40))
+	
+	NEXT RECORD:C51([nexsis_engin:152])
+End while 
+CLOSE DOCUMENT:C267($doc)

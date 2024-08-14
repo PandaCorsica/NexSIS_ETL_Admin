@@ -1,0 +1,202 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"text": "Analyse des Données Descendantes",
+					"top": 24,
+					"left": 93,
+					"width": 550,
+					"height": 16
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "Table :",
+					"top": 82,
+					"left": 36,
+					"width": 84,
+					"height": 16
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "Champ :",
+					"top": 128,
+					"left": 36,
+					"width": 84,
+					"height": 16
+				},
+				"Texte3": {
+					"type": "text",
+					"text": "Valeur :",
+					"top": 171,
+					"left": 36,
+					"width": 64,
+					"height": 16
+				},
+				"valueZone": {
+					"type": "input",
+					"left": 125,
+					"top": 171,
+					"width": 194,
+					"height": 17,
+					"dataSource": "vValeur"
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Chercher",
+					"top": 213,
+					"left": 352,
+					"width": 188,
+					"height": 36,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton.4dm"
+				},
+				"Bouton1": {
+					"type": "button",
+					"text": "Annuler",
+					"top": 213,
+					"left": 125,
+					"width": 188,
+					"height": 36,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				},
+				"tableList": {
+					"type": "dropdown",
+					"left": 125,
+					"top": 82,
+					"width": 305,
+					"height": 28,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "TTables",
+					"method": "ObjectMethods/tableList.4dm"
+				},
+				"FieldList": {
+					"type": "dropdown",
+					"left": 125,
+					"top": 125,
+					"width": 305,
+					"height": 28,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "TChamps"
+				},
+				"Texte4": {
+					"type": "text",
+					"text": "Environnement :",
+					"top": 86,
+					"left": 507,
+					"width": 121,
+					"height": 16
+				},
+				"Bouton radio": {
+					"type": "radio",
+					"text": "MAD",
+					"top": 82,
+					"left": 643,
+					"width": 71,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "integer",
+					"dataSource": "vMad",
+					"radioGroup": "grRadio"
+				},
+				"Bouton radio1": {
+					"type": "radio",
+					"text": "FORM",
+					"top": 80,
+					"left": 742,
+					"width": 77,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "integer",
+					"dataSource": "vForm",
+					"radioGroup": "grRadio"
+				},
+				"Bouton radio2": {
+					"type": "radio",
+					"text": "PRA",
+					"top": 80,
+					"left": 861,
+					"width": 77,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "integer",
+					"dataSource": "vPRA",
+					"radioGroup": "grRadio"
+				},
+				"Sous formulaire": {
+					"type": "subform",
+					"left": 36,
+					"top": 277,
+					"width": 919,
+					"height": 158
+				}
+			}
+		}
+	],
+	"geometryStamp": 71,
+	"method": "method.4dm",
+	"editor": {
+		"groups": {
+			"Group": [
+				"Bouton radio",
+				"Bouton radio1",
+				"Bouton radio2"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

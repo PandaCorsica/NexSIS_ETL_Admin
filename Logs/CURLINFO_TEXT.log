@@ -1,0 +1,5 @@
+  Trying 212.47.245.222...
+TCP_NODELAY set
+connect to 212.47.245.222 port 80 failed: Timed out
+Failed to connect to sftp.nexsis18-112.fr port 80: Timed out
+Closing connection 0

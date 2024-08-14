@@ -1,0 +1,82 @@
+{
+	"C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Project\\Donnees NexSIS.4DProject": [
+		{
+			"backupPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\data[0093].4BK",
+			"structurePath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Project\\Donnees NexSIS.4DProject",
+			"dataPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Data\\data.4DD",
+			"logPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\data[0092].4BL",
+			"startingDate": "2024-08-12T22:00:02.094Z",
+			"endingDate": "2024-08-12T22:00:02.094Z",
+			"scheduledDate": "2024-08-12T22:00:02.094Z",
+			"status": -1,
+			"backupNumber": 93,
+			"duration": 27268,
+			"attachments": [
+				{
+					"attachmentPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Data\\data.4DSyncHeader",
+					"found": true
+				},
+				{
+					"attachmentPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Data\\data.4DSyncData",
+					"found": true
+				},
+				{
+					"attachmentPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Data\\data.4DIndx",
+					"found": true
+				}
+			]
+		},
+		{
+			"backupPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\data[0094].4BK",
+			"structurePath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Project\\Donnees NexSIS.4DProject",
+			"dataPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Data\\data.4DD",
+			"logPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\data[0093].4BL",
+			"startingDate": "2024-08-13T22:00:01.995Z",
+			"endingDate": "2024-08-13T22:00:01.995Z",
+			"scheduledDate": "2024-08-13T22:00:01.995Z",
+			"status": -1,
+			"backupNumber": 94,
+			"duration": 28702,
+			"attachments": [
+				{
+					"attachmentPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Data\\data.4DSyncHeader",
+					"found": true
+				},
+				{
+					"attachmentPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Data\\data.4DSyncData",
+					"found": true
+				},
+				{
+					"attachmentPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Data\\data.4DIndx",
+					"found": true
+				}
+			]
+		},
+		{
+			"backupPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\data[0095].4BK",
+			"structurePath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Project\\Donnees NexSIS.4DProject",
+			"dataPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Data\\data.4DD",
+			"logPath": "",
+			"startingDate": "2024-08-14T11:18:30.094Z",
+			"endingDate": "2024-08-14T11:18:30.094Z",
+			"scheduledDate": "2024-08-14T11:18:30.094Z",
+			"status": -1,
+			"backupNumber": 95,
+			"duration": 17361,
+			"attachments": [
+				{
+					"attachmentPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Data\\data.4DSyncHeader",
+					"found": true
+				},
+				{
+					"attachmentPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Data\\data.4DSyncData",
+					"found": true
+				},
+				{
+					"attachmentPath": "C:\\Users\\Administrateur\\Desktop\\ETL_NexSIS\\Data\\data.4DIndx",
+					"found": true
+				}
+			]
+		}
+	]
+}

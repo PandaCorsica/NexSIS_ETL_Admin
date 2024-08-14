@@ -1,0 +1,207 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"text": "Correspondance des coordonées des UF",
+					"top": 39,
+					"left": 216,
+					"width": 303,
+					"height": 16
+				},
+				"LBGradesAntibia": {
+					"type": "listbox",
+					"left": 34,
+					"top": 102,
+					"width": 443,
+					"height": 396,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "currentSelection",
+					"table": "UF",
+					"dataSource": "",
+					"visibility": "visible",
+					"highlightSet": "$UFChoisis",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Entête1"
+							},
+							"name": "Colonne1",
+							"footer": {
+								"name": "Pied1"
+							},
+							"visibility": "hidden",
+							"dataSource": "[UF:5]ID:1",
+							"width": 57
+						},
+						{
+							"header": {
+								"name": "Entête2",
+								"text": "Nom clair"
+							},
+							"name": "Colonne2",
+							"footer": {
+								"name": "Pied2"
+							},
+							"dataSource": "[UF:5]libelle:2"
+						},
+						{
+							"header": {
+								"name": "Entête5",
+								"text": "Mobilisable"
+							},
+							"name": "Colonne5",
+							"dataSource": "[UF:5]Mobilisable:11",
+							"choiceList": {
+								"$ref": "/SOURCES/lists.json#/Vrai/faux"
+							},
+							"footer": {
+								"name": "Pied5"
+							}
+						},
+						{
+							"header": {
+								"name": "Entête9",
+								"text": "Geopoint"
+							},
+							"name": "Colonne9",
+							"footer": {
+								"name": "Pied9"
+							},
+							"dataSource": "[UF:5]geo_point:9"
+						}
+					]
+				},
+				"LBGradesNexSIS": {
+					"type": "listbox",
+					"left": 528,
+					"top": 102,
+					"width": 289,
+					"height": 400,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "currentSelection",
+					"table": "GEOUF",
+					"selectionMode": "single",
+					"highlightSet": "$GeoUFRef",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Entête3"
+							},
+							"name": "Colonne3",
+							"footer": {
+								"name": "Pied3"
+							},
+							"dataSource": "[GEOUF:6]ID:1",
+							"width": 65,
+							"visibility": "hidden",
+							"events": [
+								"onDoubleClick"
+							]
+						},
+						{
+							"header": {
+								"name": "Entête4",
+								"text": "Libelle"
+							},
+							"name": "Colonne4",
+							"footer": {
+								"name": "Pied4"
+							},
+							"dataSource": "[GEOUF:6]NomClair:5",
+							"method": "ObjectMethods/Colonne4.4dm",
+							"events": [
+								"onDoubleClick"
+							],
+							"width": 198
+						}
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "UF",
+					"top": 75,
+					"left": 137,
+					"width": 176,
+					"height": 16
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "Geo UF",
+					"top": 75,
+					"left": 624,
+					"width": 203,
+					"height": 16
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Fermer",
+					"top": 518,
+					"left": 496,
+					"width": 194,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				}
+			}
+		}
+	],
+	"geometryStamp": 34,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

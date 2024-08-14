@@ -1,0 +1,218 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"text": "Correspondance des competences Antibia -> NexSIS",
+					"top": 34,
+					"left": 179,
+					"width": 364,
+					"height": 16
+				},
+				"LBGradesAntibia": {
+					"type": "listbox",
+					"left": 44,
+					"top": 102,
+					"width": 674,
+					"height": 396,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "currentSelection",
+					"table": "CORRESPONDANCE_COMPETENCES",
+					"dataSource": "",
+					"visibility": "visible",
+					"highlightSet": "$CompetChoisis",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Entête1"
+							},
+							"name": "Colonne1",
+							"footer": {
+								"name": "Pied1"
+							},
+							"visibility": "hidden",
+							"dataSource": "[CORRESPONDANCE_COMPETENCES:41]ID:1",
+							"width": 57
+						},
+						{
+							"header": {
+								"name": "Entête2",
+								"text": "code Nexsis"
+							},
+							"name": "Colonne2",
+							"footer": {
+								"name": "Pied2"
+							},
+							"dataSource": "[CORRESPONDANCE_COMPETENCES:41]CompetenceNexsis:2",
+							"width": 101
+						},
+						{
+							"header": {
+								"name": "Entête5",
+								"text": "Libelle"
+							},
+							"name": "Colonne5",
+							"dataSource": "[CORRESPONDANCE_COMPETENCES:41]NomLongCompetence:4",
+							"footer": {
+								"name": "Pied5"
+							}
+						},
+						{
+							"header": {
+								"name": "Entête9",
+								"text": "Cle Antibia"
+							},
+							"name": "Colonne9",
+							"footer": {
+								"name": "Pied9"
+							},
+							"dataSource": "[CORRESPONDANCE_COMPETENCES:41]CodeCompet_Antibia:3",
+							"width": 73
+						},
+						{
+							"header": {
+								"name": "Entête6",
+								"text": "Code compet Antibia"
+							},
+							"name": "Colonne6",
+							"dataSource": "[CORRESPONDANCE_COMPETENCES:41]Code_Antibia_Clair:5",
+							"footer": {
+								"name": "Pied6"
+							}
+						}
+					]
+				},
+				"LBGradesNexSIS": {
+					"type": "listbox",
+					"left": 789,
+					"top": 102,
+					"width": 185,
+					"height": 396,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "currentSelection",
+					"table": "IMPORT_COMPETENCES",
+					"selectionMode": "single",
+					"highlightSet": "$CompetRef",
+					"method": "ObjectMethods/LBGradesNexSIS.4dm",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Entête3"
+							},
+							"name": "Colonne3",
+							"footer": {
+								"name": "Pied3"
+							},
+							"dataSource": "[IMPORT_COMPETENCES:39]ID:1",
+							"width": 65,
+							"visibility": "hidden",
+							"events": [
+								"onDoubleClick"
+							]
+						},
+						{
+							"header": {
+								"name": "Entête4",
+								"text": "Libelle"
+							},
+							"name": "Colonne4",
+							"footer": {
+								"name": "Pied4"
+							},
+							"dataSource": "[IMPORT_COMPETENCES:39]libelle:4",
+							"method": "ObjectMethods/Colonne4.4dm",
+							"events": [
+								"onDoubleClick"
+							],
+							"width": 367
+						}
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "Competences NexSIS",
+					"top": 70,
+					"left": 74,
+					"width": 176,
+					"height": 16
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "Competences Antibia",
+					"top": 70,
+					"left": 782,
+					"width": 203,
+					"height": 16
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Fermer",
+					"top": 518,
+					"left": 496,
+					"width": 194,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				}
+			}
+		}
+	],
+	"geometryStamp": 40,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

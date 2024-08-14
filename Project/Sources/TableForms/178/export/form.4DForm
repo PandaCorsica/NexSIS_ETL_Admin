@@ -1,0 +1,471 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 30,
+	"markerBody": 60,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "listScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"background": {
+					"type": "rectangle",
+					"fill": "automatic",
+					"stroke": "transparent",
+					"top": 30,
+					"height": 30,
+					"left": 0,
+					"right": 4950
+				},
+				"label_ID": {
+					"type": "text",
+					"text": "ID",
+					"top": 10,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]ID:1",
+					"top": 37,
+					"left": 10,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_1": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 265
+				},
+				"label_numero_rapport": {
+					"type": "text",
+					"text": "numero_rapport",
+					"top": 10,
+					"left": 270,
+					"width": 100,
+					"height": 17
+				},
+				"field_numero_rapport": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]numero_rapport:2",
+					"top": 37,
+					"left": 270,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_2": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 525
+				},
+				"label_Matricule": {
+					"type": "text",
+					"text": "Matricule",
+					"top": 10,
+					"left": 530,
+					"width": 100,
+					"height": 17
+				},
+				"field_Matricule": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]Matricule:3",
+					"top": 37,
+					"left": 530,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_3": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 785
+				},
+				"label_Nom": {
+					"type": "text",
+					"text": "Nom",
+					"top": 10,
+					"left": 790,
+					"width": 100,
+					"height": 17
+				},
+				"field_Nom": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]Nom:4",
+					"top": 37,
+					"left": 790,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_4": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1045
+				},
+				"label_Prenom": {
+					"type": "text",
+					"text": "Prenom",
+					"top": 10,
+					"left": 1050,
+					"width": 100,
+					"height": 17
+				},
+				"field_Prenom": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]Prenom:5",
+					"top": 37,
+					"left": 1050,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_5": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1305
+				},
+				"label_Grade": {
+					"type": "text",
+					"text": "Grade",
+					"top": 10,
+					"left": 1310,
+					"width": 100,
+					"height": 17
+				},
+				"field_Grade": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]Grade:6",
+					"top": 37,
+					"left": 1310,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_6": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1565
+				},
+				"label_Vehicule": {
+					"type": "text",
+					"text": "Vehicule",
+					"top": 10,
+					"left": 1570,
+					"width": 100,
+					"height": 17
+				},
+				"field_Vehicule": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]Vehicule:7",
+					"top": 37,
+					"left": 1570,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_7": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1825
+				},
+				"label_Debut": {
+					"type": "text",
+					"text": "Debut",
+					"top": 10,
+					"left": 1830,
+					"width": 100,
+					"height": 17
+				},
+				"field_Debut": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]Debut:8",
+					"top": 37,
+					"left": 1830,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_8": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2085
+				},
+				"label_Fin": {
+					"type": "text",
+					"text": "Fin",
+					"top": 10,
+					"left": 2090,
+					"width": 100,
+					"height": 17
+				},
+				"field_Fin": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]Fin:9",
+					"top": 37,
+					"left": 2090,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_9": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2345
+				},
+				"label_DateDebut": {
+					"type": "text",
+					"text": "DateDebut",
+					"top": 10,
+					"left": 2350,
+					"width": 100,
+					"height": 17
+				},
+				"field_DateDebut": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]DateDebut:10",
+					"top": 37,
+					"left": 2350,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_10": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2605
+				},
+				"label_HeureDebut": {
+					"type": "text",
+					"text": "HeureDebut",
+					"top": 10,
+					"left": 2610,
+					"width": 100,
+					"height": 17
+				},
+				"field_HeureDebut": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]HeureDebut:11",
+					"top": 37,
+					"left": 2610,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_11": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2865
+				},
+				"label_DateFin": {
+					"type": "text",
+					"text": "DateFin",
+					"top": 10,
+					"left": 2870,
+					"width": 100,
+					"height": 17
+				},
+				"field_DateFin": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]DateFin:12",
+					"top": 37,
+					"left": 2870,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_12": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3125
+				},
+				"label_HeureFin": {
+					"type": "text",
+					"text": "HeureFin",
+					"top": 10,
+					"left": 3130,
+					"width": 100,
+					"height": 17
+				},
+				"field_HeureFin": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]HeureFin:13",
+					"top": 37,
+					"left": 3130,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_13": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3385
+				},
+				"label_TSDebut": {
+					"type": "text",
+					"text": "TSDebut",
+					"top": 10,
+					"left": 3390,
+					"width": 100,
+					"height": 17
+				},
+				"field_TSDebut": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]TSDebut:14",
+					"top": 37,
+					"left": 3390,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_14": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3645
+				},
+				"label_TSFin": {
+					"type": "text",
+					"text": "TSFin",
+					"top": 10,
+					"left": 3650,
+					"width": 100,
+					"height": 17
+				},
+				"field_TSFin": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]TSFin:15",
+					"top": 37,
+					"left": 3650,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_15": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3905
+				},
+				"label_UF_rapport": {
+					"type": "text",
+					"text": "UF_rapport",
+					"top": 10,
+					"left": 3910,
+					"width": 100,
+					"height": 17
+				},
+				"field_UF_rapport": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]UF_rapport:16",
+					"top": 37,
+					"left": 3910,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_16": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 4165
+				},
+				"label_ID_Donnees_Inter": {
+					"type": "text",
+					"text": "ID_Donnees_Inter",
+					"top": 10,
+					"left": 4170,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID_Donnees_Inter": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]ID_Donnees_Inter:17",
+					"top": 37,
+					"left": 4170,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_17": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 4425
+				},
+				"label_toDelete": {
+					"type": "text",
+					"text": "toDelete",
+					"top": 10,
+					"left": 4430,
+					"width": 100,
+					"height": 17
+				},
+				"field_toDelete": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]toDelete:18",
+					"top": 37,
+					"left": 4430,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_18": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 4685
+				},
+				"label_statut": {
+					"type": "text",
+					"text": "statut",
+					"top": 10,
+					"left": 4690,
+					"width": 100,
+					"height": 17
+				},
+				"field_statut": {
+					"type": "input",
+					"dataSource": "[PARTICIPATION_AGENT_old:178]statut:19",
+					"top": 37,
+					"left": 4690,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				}
+			}
+		}
+	],
+	"geometryStamp": 1
+}

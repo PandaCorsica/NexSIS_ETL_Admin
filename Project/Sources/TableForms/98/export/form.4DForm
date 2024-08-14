@@ -1,0 +1,356 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 30,
+	"markerBody": 60,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "listScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"background": {
+					"type": "rectangle",
+					"fill": "automatic",
+					"stroke": "transparent",
+					"top": 30,
+					"height": 30,
+					"left": 0,
+					"right": 3650
+				},
+				"label_id": {
+					"type": "text",
+					"text": "id",
+					"top": 10,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_id": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]id:1",
+					"top": 37,
+					"left": 10,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_1": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 265
+				},
+				"label_id_localisation": {
+					"type": "text",
+					"text": "id_localisation",
+					"top": 10,
+					"left": 270,
+					"width": 100,
+					"height": 17
+				},
+				"field_id_localisation": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]id_localisation:2",
+					"top": 37,
+					"left": 270,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_2": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 525
+				},
+				"label_adresse_avec_numero": {
+					"type": "text",
+					"text": "adresse_avec_numero",
+					"top": 10,
+					"left": 530,
+					"width": 100,
+					"height": 17
+				},
+				"field_adresse_avec_numero": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]adresse_avec_numero:3",
+					"top": 37,
+					"left": 530,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_3": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 785
+				},
+				"label_adresse_sans_numero": {
+					"type": "text",
+					"text": "adresse_sans_numero",
+					"top": 10,
+					"left": 790,
+					"width": 100,
+					"height": 17
+				},
+				"field_adresse_sans_numero": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]adresse_sans_numero:4",
+					"top": 37,
+					"left": 790,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_4": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1045
+				},
+				"label_longitude": {
+					"type": "text",
+					"text": "longitude",
+					"top": 10,
+					"left": 1050,
+					"width": 100,
+					"height": 17
+				},
+				"field_longitude": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]longitude:5",
+					"top": 37,
+					"left": 1050,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_5": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1305
+				},
+				"label_latitude": {
+					"type": "text",
+					"text": "latitude",
+					"top": 10,
+					"left": 1310,
+					"width": 100,
+					"height": 17
+				},
+				"field_latitude": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]latitude:6",
+					"top": 37,
+					"left": 1310,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_6": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1565
+				},
+				"label_toponyme": {
+					"type": "text",
+					"text": "toponyme",
+					"top": 10,
+					"left": 1570,
+					"width": 100,
+					"height": 17
+				},
+				"field_toponyme": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]toponyme:7",
+					"top": 37,
+					"left": 1570,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_7": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1825
+				},
+				"label_commune": {
+					"type": "text",
+					"text": "commune",
+					"top": 10,
+					"left": 1830,
+					"width": 100,
+					"height": 17
+				},
+				"field_commune": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]commune:8",
+					"top": 37,
+					"left": 1830,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_8": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2085
+				},
+				"label_code_insee": {
+					"type": "text",
+					"text": "code_insee",
+					"top": 10,
+					"left": 2090,
+					"width": 100,
+					"height": 17
+				},
+				"field_code_insee": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]code_insee:9",
+					"top": 37,
+					"left": 2090,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_9": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2345
+				},
+				"label_commentaire_localisation": {
+					"type": "text",
+					"text": "commentaire_localisation",
+					"top": 10,
+					"left": 2350,
+					"width": 100,
+					"height": 17
+				},
+				"field_commentaire_localisation": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]commentaire_localisation:10",
+					"top": 37,
+					"left": 2350,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_10": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2605
+				},
+				"label_numero_alerte": {
+					"type": "text",
+					"text": "numero_alerte",
+					"top": 10,
+					"left": 2610,
+					"width": 100,
+					"height": 17
+				},
+				"field_numero_alerte": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]numero_alerte:11",
+					"top": 37,
+					"left": 2610,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_11": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2865
+				},
+				"label_code_cta": {
+					"type": "text",
+					"text": "code_cta",
+					"top": 10,
+					"left": 2870,
+					"width": 100,
+					"height": 17
+				},
+				"field_code_cta": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]code_cta:12",
+					"top": 37,
+					"left": 2870,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_12": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3125
+				},
+				"label_code_sis": {
+					"type": "text",
+					"text": "code_sis",
+					"top": 10,
+					"left": 3130,
+					"width": 100,
+					"height": 17
+				},
+				"field_code_sis": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]code_sis:13",
+					"top": 37,
+					"left": 3130,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_13": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3385
+				},
+				"label_source": {
+					"type": "text",
+					"text": "source",
+					"top": 10,
+					"left": 3390,
+					"width": 100,
+					"height": 17
+				},
+				"field_source": {
+					"type": "input",
+					"dataSource": "[sga_localisation:98]source:14",
+					"top": 37,
+					"left": 3390,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				}
+			}
+		}
+	],
+	"geometryStamp": 1
+}

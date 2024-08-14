@@ -1,0 +1,347 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"label_ID": {
+					"type": "text",
+					"text": "ID:",
+					"top": 10,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]ID:1",
+					"top": 10,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_ligne": {
+					"type": "text",
+					"text": "ligne:",
+					"top": 47,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ligne": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]ligne:2",
+					"top": 47,
+					"left": 120,
+					"width": 695,
+					"height": 160
+				},
+				"label_codeUF": {
+					"type": "text",
+					"text": "codeUF:",
+					"top": 237,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_codeUF": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]codeUF:3",
+					"top": 237,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_numInter": {
+					"type": "text",
+					"text": "numInter:",
+					"top": 274,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_numInter": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]numInter:4",
+					"top": 274,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_traite": {
+					"type": "text",
+					"text": "traite:",
+					"top": 311,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_traite": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]traite:5",
+					"top": 311,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_date_CRSS": {
+					"type": "text",
+					"text": "date_CRSS:",
+					"top": 348,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_date_CRSS": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]date_CRSS:6",
+					"top": 348,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_numeroRenfort": {
+					"type": "text",
+					"text": "numeroRenfort:",
+					"top": 385,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_numeroRenfort": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]numeroRenfort:7",
+					"top": 385,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_Code_centre_Systel": {
+					"type": "text",
+					"text": "Code_centre_Systel:",
+					"top": 422,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_Code_centre_Systel": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]Code_centre_Systel:8",
+					"top": 422,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_Libelle_UF": {
+					"type": "text",
+					"text": "Libelle_UF:",
+					"top": 459,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_Libelle_UF": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]Libelle_UF:9",
+					"top": 459,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_adresse": {
+					"type": "text",
+					"text": "adresse:",
+					"top": 496,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_adresse": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]adresse:10",
+					"top": 496,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_codePostal": {
+					"type": "text",
+					"text": "codePostal:",
+					"top": 533,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_codePostal": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]codePostal:11",
+					"top": 533,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_commune": {
+					"type": "text",
+					"text": "commune:",
+					"top": 570,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_commune": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]commune:12",
+					"top": 570,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_date_Debut": {
+					"type": "text",
+					"text": "date_Debut:",
+					"top": 607,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_date_Debut": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]date_Debut:13",
+					"top": 607,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_date_Fin": {
+					"type": "text",
+					"text": "date_Fin:",
+					"top": 644,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_date_Fin": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]date_Fin:14",
+					"top": 644,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_code_NF": {
+					"type": "text",
+					"text": "code_NF:",
+					"top": 681,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_code_NF": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]code_NF:15",
+					"top": 681,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_nom_signataire": {
+					"type": "text",
+					"text": "nom_signataire:",
+					"top": 718,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_nom_signataire": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]nom_signataire:16",
+					"top": 718,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_prenom_signataire": {
+					"type": "text",
+					"text": "prenom_signataire:",
+					"top": 755,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_prenom_signataire": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]prenom_signataire:17",
+					"top": 755,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_ID_CRSS_Validation": {
+					"type": "text",
+					"text": "ID_CRSS_Validation:",
+					"top": 792,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID_CRSS_Validation": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]ID_CRSS_Validation:18",
+					"top": 792,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_Archivage": {
+					"type": "text",
+					"text": "Archivage:",
+					"top": 829,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_Archivage": {
+					"type": "input",
+					"dataSource": "[DONNEES_INTERS:158]Archivage:19",
+					"top": 829,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				}
+			}
+		}
+	],
+	"geometryStamp": 2
+}

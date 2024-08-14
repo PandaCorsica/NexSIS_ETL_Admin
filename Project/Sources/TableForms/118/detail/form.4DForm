@@ -1,0 +1,1163 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"label_id": {
+					"type": "text",
+					"text": "id:",
+					"top": 10,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_id": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]id:1",
+					"top": 11,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_numero_alerte": {
+					"type": "text",
+					"text": "numero_alerte:",
+					"top": 47,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_numero_alerte": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]numero_alerte:2",
+					"top": 48,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_numero_compose": {
+					"type": "text",
+					"text": "numero_compose:",
+					"top": 84,
+					"left": 10,
+					"width": 261,
+					"height": 15
+				},
+				"field_numero_compose": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]numero_compose:4",
+					"top": 85,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_appelant_connu": {
+					"type": "text",
+					"text": "appelant_connu:",
+					"top": 119,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_appelant_connu": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]appelant_connu:6",
+					"top": 122,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_date_appel": {
+					"type": "text",
+					"text": "date_appel:",
+					"top": 156,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_date_appel": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]date_appel:7",
+					"top": 159,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_date_reception_alerte": {
+					"type": "text",
+					"text": "date_reception_alerte:",
+					"top": 193,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_date_reception_alerte": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]date_reception_alerte:8",
+					"top": 196,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_type_device": {
+					"type": "text",
+					"text": "type_device:",
+					"top": 230,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_type_device": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]type_device:9",
+					"top": 233,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_commune_appel": {
+					"type": "text",
+					"text": "commune_appel:",
+					"top": 267,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_commune_appel": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]commune_appel:10",
+					"top": 270,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_code_insee_appel": {
+					"type": "text",
+					"text": "code_insee_appel:",
+					"top": 304,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_code_insee_appel": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]code_insee_appel:11",
+					"top": 307,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_code_postal_appel": {
+					"type": "text",
+					"text": "code_postal_appel:",
+					"top": 341,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_code_postal_appel": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]code_postal_appel:12",
+					"top": 344,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_latitude_appel": {
+					"type": "text",
+					"text": "latitude_appel:",
+					"top": 378,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_latitude_appel": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]latitude_appel:13",
+					"top": 381,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_longitude_appel": {
+					"type": "text",
+					"text": "longitude_appel:",
+					"top": 415,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_longitude_appel": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]longitude_appel:14",
+					"top": 418,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_duree_alerte_avant_selection": {
+					"type": "text",
+					"text": "duree_alerte_avant_selection:",
+					"top": 452,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_duree_alerte_avant_selection": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]duree_alerte_avant_selection:15",
+					"top": 455,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_duree_alerte_avant_selection_se": {
+					"type": "text",
+					"text": "duree_alerte_avant_selection_se:",
+					"top": 489,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_duree_alerte_avant_selection_se": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]duree_alerte_avant_selection_se:16",
+					"top": 492,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_alerte_priorite_orientee": {
+					"type": "text",
+					"text": "alerte_priorite_orientee:",
+					"top": 526,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_alerte_priorite_orientee": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]alerte_priorite_orientee:17",
+					"top": 529,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_duree_salon_attente": {
+					"type": "text",
+					"text": "duree_salon_attente:",
+					"top": 563,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_duree_salon_attente": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]duree_salon_attente:18",
+					"top": 566,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_duree_salon_attente_secondes": {
+					"type": "text",
+					"text": "duree_salon_attente_secondes:",
+					"top": 600,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_duree_salon_attente_secondes": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]duree_salon_attente_secondes:19",
+					"top": 603,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_date_debut_traitement": {
+					"type": "text",
+					"text": "date_debut_traitement:",
+					"top": 637,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_date_debut_traitement": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]date_debut_traitement:20",
+					"top": 640,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_date_fin_traitement": {
+					"type": "text",
+					"text": "date_fin_traitement:",
+					"top": 674,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_date_fin_traitement": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]date_fin_traitement:21",
+					"top": 677,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_duree_traitement": {
+					"type": "text",
+					"text": "duree_traitement:",
+					"top": 711,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_duree_traitement": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]duree_traitement:22",
+					"top": 714,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_duree_traitement_secondes": {
+					"type": "text",
+					"text": "duree_traitement_secondes:",
+					"top": 748,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_duree_traitement_secondes": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]duree_traitement_secondes:23",
+					"top": 751,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_signalement_lors_du_traitement": {
+					"type": "text",
+					"text": "signalement_lors_du_traitement:",
+					"top": 785,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_signalement_lors_du_traitement": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]signalement_lors_du_traitement:24",
+					"top": 788,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_numero_contre_appel": {
+					"type": "text",
+					"text": "numero_contre_appel:",
+					"top": 822,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_numero_contre_appel": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]numero_contre_appel:25",
+					"top": 825,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_alerte_transferee_vers_partenai": {
+					"type": "text",
+					"text": "alerte_transferee_vers_partenai:",
+					"top": 859,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_alerte_transferee_vers_partenai": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]alerte_transferee_vers_partenai:26",
+					"top": 862,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_date_partage": {
+					"type": "text",
+					"text": "date_partage:",
+					"top": 896,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_date_partage": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]date_partage:27",
+					"top": 899,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_nom_operateur_priorisation_orie": {
+					"type": "text",
+					"text": "nom_operateur_priorisation_orie:",
+					"top": 933,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_nom_operateur_priorisation_orie": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]nom_operateur_priorisation_orie:28",
+					"top": 936,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_date_debut_priorisation_orienta": {
+					"type": "text",
+					"text": "date_debut_priorisation_orienta:",
+					"top": 970,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_date_debut_priorisation_orienta": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]date_debut_priorisation_orienta:29",
+					"top": 973,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_date_fin_priorisation_orientati": {
+					"type": "text",
+					"text": "date_fin_priorisation_orientati:",
+					"top": 1007,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_date_fin_priorisation_orientati": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]date_fin_priorisation_orientati:30",
+					"top": 1010,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_duree_priorisation": {
+					"type": "text",
+					"text": "duree_priorisation:",
+					"top": 1044,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_duree_priorisation": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]duree_priorisation:31",
+					"top": 1047,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_duree_priorisation_secondes": {
+					"type": "text",
+					"text": "duree_priorisation_secondes:",
+					"top": 1081,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_duree_priorisation_secondes": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]duree_priorisation_secondes:32",
+					"top": 1084,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_urgence_priorisation_orienta_P": {
+					"type": "text",
+					"text": "urgence_priorisation_orienta_P:",
+					"top": 1118,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_urgence_priorisation_orienta_P": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]urgence_priorisation_orienta_P:33",
+					"top": 1121,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_nature_priorisation_orienta_0L": {
+					"type": "text",
+					"text": "nature_priorisation_orienta_0L:",
+					"top": 1155,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_nature_priorisation_orienta_0L": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]nature_priorisation_orienta_0L:34",
+					"top": 1158,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_transfert_accompagne": {
+					"type": "text",
+					"text": "transfert_accompagne:",
+					"top": 1192,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_transfert_accompagne": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]transfert_accompagne:35",
+					"top": 1195,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_present_dans_salon_attente": {
+					"type": "text",
+					"text": "present_dans_salon_attente:",
+					"top": 1229,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_present_dans_salon_attente": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]present_dans_salon_attente:36",
+					"top": 1232,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_numero_ordre_alerte": {
+					"type": "text",
+					"text": "numero_ordre_alerte:",
+					"top": 1266,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_numero_ordre_alerte": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]numero_ordre_alerte:37",
+					"top": 1269,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_indicatif_pays_origine": {
+					"type": "text",
+					"text": "indicatif_pays_origine:",
+					"top": 1303,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_indicatif_pays_origine": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]indicatif_pays_origine:38",
+					"top": 1306,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_numero_affaire": {
+					"type": "text",
+					"text": "numero_affaire:",
+					"top": 1340,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_numero_affaire": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]numero_affaire:39",
+					"top": 1343,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_code_departement": {
+					"type": "text",
+					"text": "code_departement:",
+					"top": 1377,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_code_departement": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]code_departement:40",
+					"top": 1380,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_id_localisation": {
+					"type": "text",
+					"text": "id_localisation:",
+					"top": 1414,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_id_localisation": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]id_localisation:41",
+					"top": 1417,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_id_circonstance": {
+					"type": "text",
+					"text": "id_circonstance:",
+					"top": 1451,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_id_circonstance": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]id_circonstance:42",
+					"top": 1454,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_id_operateur": {
+					"type": "text",
+					"text": "id_operateur:",
+					"top": 1488,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_id_operateur": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]id_operateur:43",
+					"top": 1491,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_code_cta": {
+					"type": "text",
+					"text": "code_cta:",
+					"top": 1525,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_code_cta": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]code_cta:44",
+					"top": 1528,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_code_intervenant": {
+					"type": "text",
+					"text": "code_intervenant:",
+					"top": 1562,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_code_intervenant": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]code_intervenant:45",
+					"top": 1565,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_prenom_operateur_priorisation_o": {
+					"type": "text",
+					"text": "prenom_operateur_priorisation_o:",
+					"top": 1599,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_prenom_operateur_priorisation_o": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]prenom_operateur_priorisation_o:46",
+					"top": 1602,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_username_operateur_priorisation": {
+					"type": "text",
+					"text": "username_operateur_priorisation:",
+					"top": 1636,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_username_operateur_priorisation": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]username_operateur_priorisation:47",
+					"top": 1639,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_consignes_intervenants": {
+					"type": "text",
+					"text": "consignes_intervenants:",
+					"top": 1673,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_consignes_intervenants": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]consignes_intervenants:48",
+					"top": 1676,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_mode_declenchement": {
+					"type": "text",
+					"text": "mode_declenchement:",
+					"top": 1710,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_mode_declenchement": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]mode_declenchement:49",
+					"top": 1713,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_transfert_requerant_demande": {
+					"type": "text",
+					"text": "transfert_requerant_demande:",
+					"top": 1747,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_transfert_requerant_demande": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]transfert_requerant_demande:50",
+					"top": 1750,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_duree_alerte_avant_selection_pr": {
+					"type": "text",
+					"text": "duree_alerte_avant_selection_pr:",
+					"top": 1784,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_duree_alerte_avant_selection_pr": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]duree_alerte_avant_selection_pr:51",
+					"top": 1787,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_code_sis": {
+					"type": "text",
+					"text": "code_sis:",
+					"top": 1821,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_code_sis": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]code_sis:52",
+					"top": 1824,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_source": {
+					"type": "text",
+					"text": "source:",
+					"top": 1858,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_source": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]source:53",
+					"top": 1861,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_urgence_priorisation_orienta_1c": {
+					"type": "text",
+					"text": "urgence_priorisation_orienta_1c:",
+					"top": 1895,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_urgence_priorisation_orienta_1c": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]urgence_priorisation_orienta_1c:54",
+					"top": 1898,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_urgence_priorisation_orienta_2c": {
+					"type": "text",
+					"text": "urgence_priorisation_orienta_2c:",
+					"top": 1932,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_urgence_priorisation_orienta_2c": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]urgence_priorisation_orienta_2c:55",
+					"top": 1935,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_nature_priorisation_orienta_1L": {
+					"type": "text",
+					"text": "nature_priorisation_orienta_1L:",
+					"top": 1969,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_nature_priorisation_orienta_1L": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]nature_priorisation_orienta_1L:56",
+					"top": 1972,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_nature_priorisation_orienta_2L": {
+					"type": "text",
+					"text": "nature_priorisation_orienta_2L:",
+					"top": 2006,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_nature_priorisation_orienta_2L": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]nature_priorisation_orienta_2L:57",
+					"top": 2009,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_duree_alerte_avant_selection_S": {
+					"type": "text",
+					"text": "duree_alerte_avant_selection_S:",
+					"top": 2043,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_duree_alerte_avant_selection_S": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]duree_alerte_avant_selection_S:58",
+					"top": 2046,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_nature_priorisation_orienta_0c": {
+					"type": "text",
+					"text": "nature_priorisation_orienta_0c:",
+					"top": 2080,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_nature_priorisation_orienta_0c": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]nature_priorisation_orienta_0c:59",
+					"top": 2083,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_urgence_priorisation_orienta_L": {
+					"type": "text",
+					"text": "urgence_priorisation_orienta_L:",
+					"top": 2117,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_urgence_priorisation_orienta_L": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]urgence_priorisation_orienta_L:60",
+					"top": 2120,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_date_creation": {
+					"type": "text",
+					"text": "date_creation:",
+					"top": 2154,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_date_creation": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]date_creation:61",
+					"top": 2157,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_timestamp_creation": {
+					"type": "text",
+					"text": "timestamp_creation:",
+					"top": 2191,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_timestamp_creation": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]timestamp_creation:62",
+					"top": 2194,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_id_date_fr_metro": {
+					"type": "text",
+					"text": "id_date_fr_metro:",
+					"top": 2228,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_id_date_fr_metro": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]id_date_fr_metro:63",
+					"top": 2231,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_type_appelant": {
+					"type": "text",
+					"text": "type_appelant:",
+					"top": 2265,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_type_appelant": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]type_appelant:64",
+					"top": 2268,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_type_cta": {
+					"type": "text",
+					"text": "type_cta:",
+					"top": 2302,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_type_cta": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]type_cta:65",
+					"top": 2305,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_code_cga": {
+					"type": "text",
+					"text": "code_cga:",
+					"top": 2339,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_code_cga": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]code_cga:66",
+					"top": 2342,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_code_indicatif": {
+					"type": "text",
+					"text": "code_indicatif:",
+					"top": 2376,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_code_indicatif": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]code_indicatif:67",
+					"top": 2379,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_pays": {
+					"type": "text",
+					"text": "pays:",
+					"top": 2413,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_pays": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]pays:68",
+					"top": 2416,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_label_langue": {
+					"type": "text",
+					"text": "label_langue:",
+					"top": 2450,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_label_langue": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]label_langue:69",
+					"top": 2453,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_svi_urgence": {
+					"type": "text",
+					"text": "svi_urgence:",
+					"top": 2487,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_svi_urgence": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]svi_urgence:70",
+					"top": 2490,
+					"left": 291,
+					"width": 371,
+					"height": 16
+				},
+				"label_svi_evenement": {
+					"type": "text",
+					"text": "svi_evenement:",
+					"top": 2524,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_svi_evenement": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]svi_evenement:71",
+					"top": 2526,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				},
+				"label_date_alimentation": {
+					"type": "text",
+					"text": "date_alimentation:",
+					"top": 2561,
+					"left": 10,
+					"width": 261,
+					"height": 17
+				},
+				"field_date_alimentation": {
+					"type": "input",
+					"dataSource": "[sga_alerte:118]date_alimentation:72",
+					"top": 2563,
+					"left": 291,
+					"width": 371,
+					"height": 17
+				}
+			}
+		}
+	],
+	"geometryStamp": 17
+}

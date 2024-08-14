@@ -1,0 +1,155 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"text": "Parametres de connexion à la base RH",
+					"top": 26,
+					"left": 83,
+					"width": 301,
+					"height": 16
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "Nom de la connexion :",
+					"top": 75,
+					"left": 35,
+					"width": 152,
+					"height": 16
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "Login :",
+					"top": 114,
+					"left": 35,
+					"width": 54,
+					"height": 16
+				},
+				"Texte3": {
+					"type": "text",
+					"text": "Mot de passe :",
+					"top": 159,
+					"left": 33,
+					"width": 93,
+					"height": 16
+				},
+				"field_baseName": {
+					"type": "input",
+					"dataSource": "[PARAMETRES:27]baseName:2",
+					"top": 74,
+					"left": 181,
+					"width": 250,
+					"height": 17
+				},
+				"field_baseLogin": {
+					"type": "input",
+					"dataSource": "[PARAMETRES:27]baseLogin:3",
+					"top": 111,
+					"left": 83,
+					"width": 250,
+					"height": 17
+				},
+				"field_basePass": {
+					"type": "input",
+					"dataSource": "[PARAMETRES:27]basePass:4",
+					"top": 158,
+					"left": 134,
+					"width": 250,
+					"height": 17
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Annuler",
+					"top": 268,
+					"left": 79,
+					"width": 117,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				},
+				"Bouton1": {
+					"type": "button",
+					"text": "Enregistrer",
+					"top": 267,
+					"left": 244,
+					"width": 140,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton1.4dm"
+				},
+				"Texte4": {
+					"type": "text",
+					"text": "Base Formation",
+					"top": 201,
+					"left": 35,
+					"width": 152,
+					"height": 16
+				},
+				"field_baseName1": {
+					"type": "input",
+					"dataSource": "[PARAMETRES:27]baseForm:5",
+					"top": 200,
+					"left": 181,
+					"width": 250,
+					"height": 17
+				},
+				"Texte5": {
+					"type": "text",
+					"text": "Base WebAct",
+					"top": 231,
+					"left": 35,
+					"width": 152,
+					"height": 16
+				},
+				"field_baseName2": {
+					"type": "input",
+					"dataSource": "[PARAMETRES:27]baseWA:9",
+					"top": 230,
+					"left": 181,
+					"width": 250,
+					"height": 17
+				}
+			}
+		}
+	],
+	"geometryStamp": 30
+}

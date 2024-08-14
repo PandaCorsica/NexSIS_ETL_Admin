@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des moyens</title>
+    <link rel="icon" href="images/sis2a.png" type="Logo SIS2A">
+    <link rel="stylesheet" href="stylesmoyens.css">
+    <script src="scriptmoyens.js"></script>
+</head>
+<body>
+    <div class="entete">
+        <div class="bloc-entete gauche">
+            <img src="images/nexsis_rond.png" alt="Logo Gauche">
+        </div>
+        <div class="bloc-entete centre">
+            <h1>LISTE DES MOYENS</h1>
+        </div>
+        <div class="bloc-entete droite">
+            <img src="images/sis2a.png" alt="Logo Droite">
+        </div>
+    </div>
+    <div class="filtres">
+        <label for="filtre-nom">Nom :</label>
+        <input type="text" id="filtre-nom" oninput="filtrerTableau()">
+
+        <label for="select-centre">Centre :</label>
+        <select id="select-centre" onchange="filtrerTableau()">
+            <option value="">Tous</option>
+        </select>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Centre</th>
+                <th>État</th>
+                <th>RFGI</th>
+            </tr>
+        </thead>
+        <tbody id="corps-tableau">
+            <!-- Les données sont insérées ici -->
+        </tbody>
+    </table>
+</body>
+</html>

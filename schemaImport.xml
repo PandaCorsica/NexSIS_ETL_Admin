@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings-import-export char_display_format="decimal" encoding="UTF-8" file_path="C:\Users\Administrateur\Desktop\ETL_NexSIS\WebFolder\Envoi_temp\LISTE_GARDE.csv" format="text" import_mode="create" platform="automatic" table_no="44">
+	<text_settings delimiter_field="59" delimiter_record="13" first_imported_line="2" with_column_title="false"/>
+	<field field_no="2" kind="alpha" name="matricule" table_no="44"/>
+	<field field_no="3" kind="alpha" name="etat_disponibilite" table_no="44"/>
+	<field field_no="8" kind="alpha" name="etat_situation" table_no="44"/>
+	<field field_no="4" kind="alpha" table_no="44"/>
+	<field field_no="5" kind="alpha" table_no="44"/>
+	<field field_no="6" kind="alpha" table_no="44"/>
+	<field field_no="9" kind="alpha" name="statut" table_no="44"/>
+	<field field_no="10" kind="alpha" name="position_administrative" table_no="44"/>
+	<xml_settings/>
+</settings-import-export>

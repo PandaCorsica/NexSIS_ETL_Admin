@@ -1,0 +1,4 @@
+//%attributes = {}
+ALL RECORDS:C47([PARAMETRES:27])
+
+SQL LOGIN:C817("ODBC:"+[PARAMETRES:27]baseWA:9; [PARAMETRES:27]baseLogin:3; [PARAMETRES:27]basePass:4)

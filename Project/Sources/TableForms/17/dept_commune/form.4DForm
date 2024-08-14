@@ -1,0 +1,200 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"text": "Informations individu",
+					"top": 28,
+					"left": 84,
+					"width": 200,
+					"height": 16
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "Code Dept Naissance :",
+					"top": 175,
+					"left": 37,
+					"width": 161,
+					"height": 16
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "Code INSEE commune :",
+					"top": 213,
+					"left": 36,
+					"width": 162,
+					"height": 16
+				},
+				"Texte3": {
+					"type": "text",
+					"text": "Sexe (M/F) :",
+					"top": 254,
+					"left": 36,
+					"width": 89,
+					"height": 16
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Annuler",
+					"top": 303,
+					"left": 60,
+					"width": 109,
+					"height": 32,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				},
+				"Bouton1": {
+					"type": "button",
+					"text": "Valider",
+					"top": 303,
+					"left": 201,
+					"width": 109,
+					"height": 32,
+					"events": [
+						"onClick"
+					],
+					"action": "accept"
+				},
+				"Zone de saisie": {
+					"type": "input",
+					"left": 134,
+					"top": 253,
+					"width": 73,
+					"height": 17,
+					"dataSource": "[IMPORT_INDIVIDUS:17]Sexe:11",
+					"entryFilter": "&\"M;F\""
+				},
+				"Zone de saisie1": {
+					"type": "input",
+					"left": 189,
+					"top": 174,
+					"width": 73,
+					"height": 17,
+					"dataSource": "vNumDept"
+				},
+				"Zone de saisie3": {
+					"type": "input",
+					"left": 189,
+					"top": 213,
+					"width": 73,
+					"height": 17,
+					"dataSource": "vINSEECommune"
+				},
+				"Texte4": {
+					"type": "text",
+					"text": "Sexe enregistré",
+					"top": 82,
+					"left": 37,
+					"width": 132,
+					"height": 16
+				},
+				"Zone de saisie2": {
+					"type": "input",
+					"left": 189,
+					"top": 82,
+					"width": 73,
+					"height": 17,
+					"dataSource": "[IMPORT_INDIVIDUS:17]Sexe:11",
+					"entryFilter": "&\"M;F\""
+				},
+				"Texte5": {
+					"type": "text",
+					"text": "Lieu naissance",
+					"top": 107,
+					"left": 37,
+					"width": 132,
+					"height": 16
+				},
+				"Zone de saisie4": {
+					"type": "input",
+					"left": 189,
+					"top": 107,
+					"width": 73,
+					"height": 17,
+					"dataSource": "[IMPORT_INDIVIDUS:17]Lieu _naissance:9",
+					"entryFilter": "&\"M;F\""
+				},
+				"Texte6": {
+					"type": "text",
+					"text": "CP Naissance",
+					"top": 132,
+					"left": 37,
+					"width": 132,
+					"height": 16
+				},
+				"Zone de saisie5": {
+					"type": "input",
+					"left": 189,
+					"top": 132,
+					"width": 73,
+					"height": 17,
+					"dataSource": "[IMPORT_INDIVIDUS:17]CP_naissance:10",
+					"entryFilter": "&\"M;F\""
+				},
+				"Zone de saisie6": {
+					"type": "input",
+					"left": 45,
+					"top": 53,
+					"width": 142,
+					"height": 17,
+					"dataSource": "[IMPORT_INDIVIDUS:17]Nom:3",
+					"entryFilter": "&\"M;F\""
+				},
+				"Zone de saisie7": {
+					"type": "input",
+					"left": 207,
+					"top": 53,
+					"width": 118,
+					"height": 17,
+					"dataSource": "[IMPORT_INDIVIDUS:17]Prenom:5",
+					"entryFilter": "&\"M;F\""
+				}
+			}
+		}
+	],
+	"geometryStamp": 38,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

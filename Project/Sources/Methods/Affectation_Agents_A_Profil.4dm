@@ -1,0 +1,447 @@
+//%attributes = {}
+ALL RECORDS:C47([AGENTS_PROFILS:138])
+DELETE SELECTION:C66([AGENTS_PROFILS:138])
+
+QUERY:C277([COMPETENCES:4]; [COMPETENCES:4]competence:3="OCO")
+While (Not:C34(End selection:C36([COMPETENCES:4])))
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_affectation:2=[COMPETENCES:4]id_affectation:2)
+	$dateDeb:=[AFFECTATIONS:3]date_debut:6
+	$dateFin:=[AFFECTATIONS:3]date_fin:7
+	$idAgent:=[AFFECTATIONS:3]id_agent:3
+	//on regarde si l'agent a une affectation cga, cga_cta, cga_cta_po
+	$pos:=Position:C15("_"; [AFFECTATIONS:3]id_affectation:2)
+	$debAffect:=Substring:C12([AFFECTATIONS:3]id_affectation:2; 1; $pos-1)
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_agent:3=$idAgent; *)
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_uf:4="cga")
+	If (Records in selection:C76([AFFECTATIONS:3])=0)
+		CREATE RECORD:C68([AFFECTATIONS:3])
+		[AFFECTATIONS:3]date_debut:6:=$dateDeb
+		[AFFECTATIONS:3]date_fin:7:=$dateFin
+		[AFFECTATIONS:3]id_affectation:2:=$debAffect+"_cga"
+		[AFFECTATIONS:3]id_agent:3:=$idAgent
+		[AFFECTATIONS:3]id_uf:4:="cga"
+		[AFFECTATIONS:3]type:5:="AFFECTATION_APPLICATIVE"
+		SAVE RECORD:C53([AFFECTATIONS:3])
+		CREATE RECORD:C68([AGENTS_PROFILS:138])
+		[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+		[AGENTS_PROFILS:138]Nom_Profil:2:="Operateur CODIS"
+		SAVE RECORD:C53([AGENTS_PROFILS:138])
+	End if 
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_agent:3=$idAgent; *)
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_uf:4="cgo")
+	If (Records in selection:C76([AFFECTATIONS:3])=0)
+		CREATE RECORD:C68([AFFECTATIONS:3])
+		[AFFECTATIONS:3]date_debut:6:=$dateDeb
+		[AFFECTATIONS:3]date_fin:7:=$dateFin
+		[AFFECTATIONS:3]id_affectation:2:=$debAffect+"_cgo"
+		[AFFECTATIONS:3]id_agent:3:=$idAgent
+		[AFFECTATIONS:3]id_uf:4:="cgo"
+		[AFFECTATIONS:3]type:5:="AFFECTATION_APPLICATIVE"
+		SAVE RECORD:C53([AFFECTATIONS:3])
+		CREATE RECORD:C68([AGENTS_PROFILS:138])
+		[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+		[AGENTS_PROFILS:138]Nom_Profil:2:="Operateur CODIS"
+		SAVE RECORD:C53([AGENTS_PROFILS:138])
+	End if 
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_agent:3=$idAgent; *)
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_uf:4="cga_cta")
+	If (Records in selection:C76([AFFECTATIONS:3])=0)
+		CREATE RECORD:C68([AFFECTATIONS:3])
+		[AFFECTATIONS:3]date_debut:6:=$dateDeb
+		[AFFECTATIONS:3]date_fin:7:=$dateFin
+		[AFFECTATIONS:3]id_affectation:2:=$debAffect+"_cga_cta"
+		[AFFECTATIONS:3]id_agent:3:=$idAgent
+		[AFFECTATIONS:3]id_uf:4:="cga_cta"
+		[AFFECTATIONS:3]type:5:="AFFECTATION_APPLICATIVE"
+		SAVE RECORD:C53([AFFECTATIONS:3])
+		CREATE RECORD:C68([AGENTS_PROFILS:138])
+		[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+		[AGENTS_PROFILS:138]Nom_Profil:2:="Operateur CODIS"
+		SAVE RECORD:C53([AGENTS_PROFILS:138])
+	End if 
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_agent:3=$idAgent; *)
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_uf:4="cga_cta_po")
+	If (Records in selection:C76([AFFECTATIONS:3])=0)
+		CREATE RECORD:C68([AFFECTATIONS:3])
+		[AFFECTATIONS:3]date_debut:6:=$dateDeb
+		[AFFECTATIONS:3]date_fin:7:=$dateFin
+		[AFFECTATIONS:3]id_affectation:2:=$debAffect+"_cga_cta_po"
+		[AFFECTATIONS:3]id_agent:3:=$idAgent
+		[AFFECTATIONS:3]id_uf:4:="cga_cta_po"
+		[AFFECTATIONS:3]type:5:="AFFECTATION_APPLICATIVE"
+		SAVE RECORD:C53([AFFECTATIONS:3])
+		CREATE RECORD:C68([AGENTS_PROFILS:138])
+		[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+		[AGENTS_PROFILS:138]Nom_Profil:2:="Operateur CODIS"
+		SAVE RECORD:C53([AGENTS_PROFILS:138])
+	End if 
+	NEXT RECORD:C51([COMPETENCES:4])
+End while 
+
+QUERY:C277([COMPETENCES:4]; [COMPETENCES:4]competence:3="CSO")
+While (Not:C34(End selection:C36([COMPETENCES:4])))
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_affectation:2=[COMPETENCES:4]id_affectation:2)
+	$dateDeb:=[AFFECTATIONS:3]date_debut:6
+	$dateFin:=[AFFECTATIONS:3]date_fin:7
+	$idAgent:=[AFFECTATIONS:3]id_agent:3
+	//on regarde si l'agent a une affectation cga, cga_cta, cga_cta_po
+	$pos:=Position:C15("_"; [AFFECTATIONS:3]id_affectation:2)
+	$debAffect:=Substring:C12([AFFECTATIONS:3]id_affectation:2; 1; $pos-1)
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_agent:3=$idAgent; *)
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_uf:4="cga")
+	If (Records in selection:C76([AFFECTATIONS:3])=0)
+		CREATE RECORD:C68([AFFECTATIONS:3])
+		[AFFECTATIONS:3]date_debut:6:=$dateDeb
+		[AFFECTATIONS:3]date_fin:7:=$dateFin
+		[AFFECTATIONS:3]id_affectation:2:=$debAffect+"_cga"
+		[AFFECTATIONS:3]id_agent:3:=$idAgent
+		[AFFECTATIONS:3]id_uf:4:="cga"
+		[AFFECTATIONS:3]type:5:="AFFECTATION_APPLICATIVE"
+		SAVE RECORD:C53([AFFECTATIONS:3])
+		CREATE RECORD:C68([AGENTS_PROFILS:138])
+		[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+		[AGENTS_PROFILS:138]Nom_Profil:2:="Chef de salle"
+		SAVE RECORD:C53([AGENTS_PROFILS:138])
+	End if 
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_agent:3=$idAgent; *)
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_uf:4="cgo")
+	If (Records in selection:C76([AFFECTATIONS:3])=0)
+		CREATE RECORD:C68([AFFECTATIONS:3])
+		[AFFECTATIONS:3]date_debut:6:=$dateDeb
+		[AFFECTATIONS:3]date_fin:7:=$dateFin
+		[AFFECTATIONS:3]id_affectation:2:=$debAffect+"_cgo"
+		[AFFECTATIONS:3]id_agent:3:=$idAgent
+		[AFFECTATIONS:3]id_uf:4:="cgo"
+		[AFFECTATIONS:3]type:5:="AFFECTATION_APPLICATIVE"
+		SAVE RECORD:C53([AFFECTATIONS:3])
+		CREATE RECORD:C68([AGENTS_PROFILS:138])
+		[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+		[AGENTS_PROFILS:138]Nom_Profil:2:="Chef de salle"
+		SAVE RECORD:C53([AGENTS_PROFILS:138])
+	End if 
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_agent:3=$idAgent; *)
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_uf:4="cga_cta")
+	If (Records in selection:C76([AFFECTATIONS:3])=0)
+		CREATE RECORD:C68([AFFECTATIONS:3])
+		[AFFECTATIONS:3]date_debut:6:=$dateDeb
+		[AFFECTATIONS:3]date_fin:7:=$dateFin
+		[AFFECTATIONS:3]id_affectation:2:=$debAffect+"_cga_cta"
+		[AFFECTATIONS:3]id_agent:3:=$idAgent
+		[AFFECTATIONS:3]id_uf:4:="cga_cta"
+		[AFFECTATIONS:3]type:5:="AFFECTATION_APPLICATIVE"
+		SAVE RECORD:C53([AFFECTATIONS:3])
+		CREATE RECORD:C68([AGENTS_PROFILS:138])
+		[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+		[AGENTS_PROFILS:138]Nom_Profil:2:="Chef de salle"
+		SAVE RECORD:C53([AGENTS_PROFILS:138])
+	End if 
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_agent:3=$idAgent; *)
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_uf:4="cga_cta_po")
+	If (Records in selection:C76([AFFECTATIONS:3])=0)
+		CREATE RECORD:C68([AFFECTATIONS:3])
+		[AFFECTATIONS:3]date_debut:6:=$dateDeb
+		[AFFECTATIONS:3]date_fin:7:=$dateFin
+		[AFFECTATIONS:3]id_affectation:2:=$debAffect+"_cga_cta_po"
+		[AFFECTATIONS:3]id_agent:3:=$idAgent
+		[AFFECTATIONS:3]id_uf:4:="cga_cta_po"
+		[AFFECTATIONS:3]type:5:="AFFECTATION_APPLICATIVE"
+		SAVE RECORD:C53([AFFECTATIONS:3])
+		CREATE RECORD:C68([AGENTS_PROFILS:138])
+		[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+		[AGENTS_PROFILS:138]Nom_Profil:2:="Chef de salle"
+		SAVE RECORD:C53([AGENTS_PROFILS:138])
+	End if 
+	NEXT RECORD:C51([COMPETENCES:4])
+End while 
+
+
+QUERY:C277([AGENTS:2]; [AGENTS:2]grade:7="SIS-CSP-SP-@"; *)
+QUERY:C277([AGENTS:2]; [AGENTS:2]grade:7#"SIS-CSP-SP-SAP"; *)
+QUERY:C277([AGENTS:2]; [AGENTS:2]grade:7#"SIS-CSP-SP-SAP1"; *)
+QUERY:C277([AGENTS:2]; [AGENTS:2]grade:7#"SIS-CSP-SP-CPL"; *)
+QUERY:C277([AGENTS:2]; [AGENTS:2]grade:7#"SIS-CSP-SP-CCH"; *)
+QUERY:C277([AGENTS:2]; [AGENTS:2]grade:7#"SIS-CSP-SP-EXP"; *)
+QUERY:C277([AGENTS:2]; [AGENTS:2]grade:7#"SIS-CSP-SP-PATS")
+While (Not:C34(End selection:C36([AGENTS:2])))
+	RELATE MANY:C262([AGENTS:2]id_agent:3)
+	QUERY SELECTION:C341([AFFECTATIONS:3]; [AFFECTATIONS:3]type:5="AFFECTATION_APPLICATIVE")
+	While (Not:C34(End selection:C36([AFFECTATIONS:3])))
+		CREATE RECORD:C68([AGENTS_PROFILS:138])
+		[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+		[AGENTS_PROFILS:138]Nom_Profil:2:="Sous-Officier"
+		SAVE RECORD:C53([AGENTS_PROFILS:138])
+		
+		NEXT RECORD:C51([AFFECTATIONS:3])
+	End while 
+	
+	NEXT RECORD:C51([AGENTS:2])
+End while 
+
+$nomProfil:="Generique centre"
+QUERY:C277([AGENTS:2]; [AGENTS:2]matricule:5="99@")
+QUERY SELECTION BY FORMULA:C207([AGENTS:2]; Length:C16([AGENTS:2]matricule:5)=4)
+While (Not:C34(End selection:C36([AGENTS:2])))
+	RELATE MANY:C262([AGENTS:2]id_agent:3)
+	QUERY SELECTION:C341([AFFECTATIONS:3]; [AFFECTATIONS:3]type:5="AFFECTATION_APPLICATIVE")
+	While (Not:C34(End selection:C36([AFFECTATIONS:3])))
+		CREATE RECORD:C68([AGENTS_PROFILS:138])
+		[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+		[AGENTS_PROFILS:138]Nom_Profil:2:="Generique centre"
+		SAVE RECORD:C53([AGENTS_PROFILS:138])
+		
+		NEXT RECORD:C51([AFFECTATIONS:3])
+	End while 
+	
+	NEXT RECORD:C51([AGENTS:2])
+End while 
+
+$nomProfil:="Tous"
+ALL RECORDS:C47([AGENTS:2])
+While (Not:C34(End selection:C36([AGENTS:2])))
+	RELATE MANY:C262([AGENTS:2]id_agent:3)
+	QUERY SELECTION:C341([AFFECTATIONS:3]; [AFFECTATIONS:3]type:5="AFFECTATION_APPLICATIVE")
+	While (Not:C34(End selection:C36([AFFECTATIONS:3])))
+		CREATE RECORD:C68([AGENTS_PROFILS:138])
+		[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+		[AGENTS_PROFILS:138]Nom_Profil:2:="Tous"
+		SAVE RECORD:C53([AGENTS_PROFILS:138])
+		NEXT RECORD:C51([AFFECTATIONS:3])
+	End while 
+	NEXT RECORD:C51([AGENTS:2])
+End while 
+
+
+$nomProfil:="SIG"
+QUERY:C277([AGENTS:2]; [AGENTS:2]matricule:5="391"; *)  // andres
+QUERY:C277([AGENTS:2]; [AGENTS:2]statut:6="PATS")
+QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_agent:3=[AGENTS:2]id_agent:3)
+QUERY SELECTION:C341([AFFECTATIONS:3]; [AFFECTATIONS:3]type:5="AFFECTATION_APPLICATIVE")
+CREATE RECORD:C68([AGENTS_PROFILS:138])
+[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+[AGENTS_PROFILS:138]Nom_Profil:2:="SIG"
+SAVE RECORD:C53([AGENTS_PROFILS:138])
+QUERY:C277([AGENTS:2]; [AGENTS:2]matricule:5="4818"; *)  // martini
+QUERY:C277([AGENTS:2]; [AGENTS:2]statut:6="Contractuel")
+QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_agent:3=[AGENTS:2]id_agent:3)
+QUERY SELECTION:C341([AFFECTATIONS:3]; [AFFECTATIONS:3]type:5="AFFECTATION_APPLICATIVE")
+CREATE RECORD:C68([AGENTS_PROFILS:138])
+[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+[AGENTS_PROFILS:138]Nom_Profil:2:="SIG"
+SAVE RECORD:C53([AGENTS_PROFILS:138])
+
+
+
+$nomProfil:="Chef de centre"
+ARRAY TEXT:C222(TMatricule; 0)
+ARRAY TEXT:C222(TStatut; 0)
+APPEND TO ARRAY:C911(TMatricule; "152")
+APPEND TO ARRAY:C911(TStatut; "SPP")
+APPEND TO ARRAY:C911(TMatricule; "345")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "1008")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "1826")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "4200")
+APPEND TO ARRAY:C911(TStatut; "SPP")
+APPEND TO ARRAY:C911(TMatricule; "1253")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "1718")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "83")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "13")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "3270")
+APPEND TO ARRAY:C911(TStatut; "SPP")
+APPEND TO ARRAY:C911(TMatricule; "116")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "360")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "4489")
+APPEND TO ARRAY:C911(TStatut; "SPP")
+APPEND TO ARRAY:C911(TMatricule; "438")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "368")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "1683")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "1050")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "2004")
+APPEND TO ARRAY:C911(TStatut; "SPP")
+APPEND TO ARRAY:C911(TMatricule; "1774")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "273")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+APPEND TO ARRAY:C911(TMatricule; "672")
+APPEND TO ARRAY:C911(TStatut; "SPV")
+
+For ($i; 1; Size of array:C274(TMatricule))
+	QUERY:C277([AGENTS:2]; [AGENTS:2]matricule:5=TMatricule{$i}; *)
+	QUERY:C277([AGENTS:2]; [AGENTS:2]statut:6=TStatut{$i})
+	QUERY:C277([AFFECTATIONS:3]; [AFFECTATIONS:3]id_agent:3=[AGENTS:2]id_agent:3)
+	QUERY SELECTION:C341([AFFECTATIONS:3]; [AFFECTATIONS:3]type:5="AFFECTATION_APPLICATIVE")
+	CREATE RECORD:C68([AGENTS_PROFILS:138])
+	[AGENTS_PROFILS:138]Affectation:3:=[AFFECTATIONS:3]id_affectation:2
+	[AGENTS_PROFILS:138]Nom_Profil:2:="Chef de centre"
+	SAVE RECORD:C53([AGENTS_PROFILS:138])
+	
+End for 
+
+
+$nomProfil:="Parametrage"
+ARRAY TEXT:C222($TMatricule; 0)
+ARRAY TEXT:C222($TStatut; 0)
+ARRAY TEXT:C222($TIdAffect; 0)
+ARRAY TEXT:C222($TIDAgent; 0)
+//casalot PATS
+APPEND TO ARRAY:C911($TMatricule; "75")
+APPEND TO ARRAY:C911($TStatut; "PATS")
+APPEND TO ARRAY:C911($TIDAgent; "75-2")
+//// chioca SPP
+APPEND TO ARRAY:C911($TMatricule; "1833")
+APPEND TO ARRAY:C911($TStatut; "SPP")
+APPEND TO ARRAY:C911($TIDAgent; "1833-1")
+// chiocca SPV
+APPEND TO ARRAY:C911($TMatricule; "1833")
+APPEND TO ARRAY:C911($TStatut; "SPV")
+APPEND TO ARRAY:C911($TIDAgent; "1833-0")
+
+// Morelli SPP
+APPEND TO ARRAY:C911($TMatricule; "28")
+APPEND TO ARRAY:C911($TStatut; "SPP")
+APPEND TO ARRAY:C911($TIDAgent; "28-1")
+
+// Lusinchi SPP
+APPEND TO ARRAY:C911($TMatricule; "4199")
+APPEND TO ARRAY:C911($TStatut; "SPP")
+APPEND TO ARRAY:C911($TIDAgent; "4199-1")
+
+
+
+// test d'existance des affectations particulieres
+ARRAY TEXT:C222($TIDUF; 0)
+APPEND TO ARRAY:C911($TIDUF; "sis")
+APPEND TO ARRAY:C911($TIDUF; "cga")
+APPEND TO ARRAY:C911($TIDUF; "cga_cta")
+APPEND TO ARRAY:C911($TIDUF; "cga_cta_po")
+APPEND TO ARRAY:C911($TIDUF; "cgo")
+For ($i; 1; Size of array:C274($TMatricule))
+	QUERY:C277([AGENTS:2]; [AGENTS:2]matricule:5=$TMatricule{$i}; *)  // casalot
+	QUERY:C277([AGENTS:2]; [AGENTS:2]statut:6=$TStatut{$i})
+	For ($j; 1; Size of array:C274($TIDUF))
+		//CHERCHER([AFFECTATIONS]; [AFFECTATIONS]id_agent=[AGENTS]id_agent; *)
+		//CHERCHER([AFFECTATIONS]; [AFFECTATIONS]id_affectation=$TIDAgent{$i}+"_"+$TIDUF{$j}; *)
+		//CHERCHER([AFFECTATIONS]; [AFFECTATIONS]type="AFFECTATION_APPLICATIVE")
+		//Si (Enregistrements trouvés([AFFECTATIONS])=0)
+		//CRÉER ENREGISTREMENT([AFFECTATIONS])
+		//[AFFECTATIONS]date_debut:="2015-06-15T00:00:00+02:00"
+		//[AFFECTATIONS]date_fin:=""
+		//[AFFECTATIONS]id_affectation:=$TIDAgent{$i}+"_"+$TIDUF{$j}
+		//[AFFECTATIONS]id_agent:=$TIDAgent{$i}
+		//[AFFECTATIONS]id_uf:=$TIDUF{$j}
+		//[AFFECTATIONS]type:="AFFECTATION_APPLICATIVE"
+		//STOCKER ENREGISTREMENT([AFFECTATIONS])
+		//Fin de si 
+		QUERY:C277([AGENTS_PROFILS:138]; [AGENTS_PROFILS:138]Affectation:3=$TIDAgent{$i}+"_"+$TIDUF{$j}; *)
+		QUERY:C277([AGENTS_PROFILS:138]; [AGENTS_PROFILS:138]Nom_Profil:2="Parametrage")
+		If (Records in selection:C76([AGENTS_PROFILS:138])=0)
+			CREATE RECORD:C68([AGENTS_PROFILS:138])
+			[AGENTS_PROFILS:138]Affectation:3:=$TIDAgent{$i}+"_"+$TIDUF{$j}
+			[AGENTS_PROFILS:138]Nom_Profil:2:="Parametrage"
+			SAVE RECORD:C53([AGENTS_PROFILS:138])
+		End if 
+		
+	End for 
+End for 
+
+
+
+$nomProfil:="Gestionnaire CODIS"
+ARRAY TEXT:C222($TMatricule; 0)
+ARRAY TEXT:C222($TStatut; 0)
+ARRAY TEXT:C222($TIdAffect; 0)
+ARRAY TEXT:C222($TIDAgent; 0)
+//carta SPP
+APPEND TO ARRAY:C911($TMatricule; "925")
+APPEND TO ARRAY:C911($TStatut; "SPP")
+APPEND TO ARRAY:C911($TIDAgent; "925-1")
+//carta SPV
+APPEND TO ARRAY:C911($TMatricule; "925")
+APPEND TO ARRAY:C911($TStatut; "SPV")
+APPEND TO ARRAY:C911($TIDAgent; "925-0")
+// leca SPP
+APPEND TO ARRAY:C911($TMatricule; "1170")
+APPEND TO ARRAY:C911($TStatut; "SPP")
+APPEND TO ARRAY:C911($TIDAgent; "1170-0")
+
+// Patacchini SPP
+APPEND TO ARRAY:C911($TMatricule; "886")
+APPEND TO ARRAY:C911($TStatut; "SPP")
+APPEND TO ARRAY:C911($TIDAgent; "886-1")
+
+// Lubrano SPP
+APPEND TO ARRAY:C911($TMatricule; "4271")
+APPEND TO ARRAY:C911($TStatut; "SPP")
+APPEND TO ARRAY:C911($TIDAgent; "4271-1")
+
+// Giovannai SPP
+APPEND TO ARRAY:C911($TMatricule; "4270")
+APPEND TO ARRAY:C911($TStatut; "SPP")
+APPEND TO ARRAY:C911($TIDAgent; "4270-1")
+
+// Bungelmi SPP
+APPEND TO ARRAY:C911($TMatricule; "4150")
+APPEND TO ARRAY:C911($TStatut; "SPP")
+APPEND TO ARRAY:C911($TIDAgent; "4150-1")
+
+// Bungelmi SPV
+APPEND TO ARRAY:C911($TMatricule; "4150")
+APPEND TO ARRAY:C911($TStatut; "SPV")
+APPEND TO ARRAY:C911($TIDAgent; "4150-0")
+
+
+
+ARRAY TEXT:C222($TIDUF; 0)
+APPEND TO ARRAY:C911($TIDUF; "sis")
+APPEND TO ARRAY:C911($TIDUF; "cga")
+APPEND TO ARRAY:C911($TIDUF; "cga_cta")
+APPEND TO ARRAY:C911($TIDUF; "cga_cta_po")
+APPEND TO ARRAY:C911($TIDUF; "cgo")
+For ($i; 1; Size of array:C274($TMatricule))
+	QUERY:C277([AGENTS:2]; [AGENTS:2]matricule:5=$TMatricule{$i}; *)
+	QUERY:C277([AGENTS:2]; [AGENTS:2]statut:6=$TStatut{$i})
+	For ($j; 1; Size of array:C274($TIDUF))
+		//CHERCHER([AFFECTATIONS]; [AFFECTATIONS]id_agent=[AGENTS]id_agent; *)
+		//CHERCHER([AFFECTATIONS]; [AFFECTATIONS]id_affectation=$TIDAgent{$i}+"_"+$TIDUF{$j}; *)
+		//CHERCHER([AFFECTATIONS]; [AFFECTATIONS]type="AFFECTATION_APPLICATIVE")
+		//Si (Enregistrements trouvés([AFFECTATIONS])=0)
+		//CRÉER ENREGISTREMENT([AFFECTATIONS])
+		//[AFFECTATIONS]date_debut:="2015-06-15T00:00:00+02:00"
+		//[AFFECTATIONS]date_fin:=""
+		//[AFFECTATIONS]id_affectation:=$TIDAgent{$i}+"_"+$TIDUF{$j}
+		//[AFFECTATIONS]id_agent:=$TIDAgent{$i}
+		//[AFFECTATIONS]id_uf:=$TIDUF{$j}
+		//[AFFECTATIONS]type:="AFFECTATION_APPLICATIVE"
+		//STOCKER ENREGISTREMENT([AFFECTATIONS])
+		//Fin de si 
+		QUERY:C277([AGENTS_PROFILS:138]; [AGENTS_PROFILS:138]Affectation:3=$TIDAgent{$i}+"_"+$TIDUF{$j}; *)
+		QUERY:C277([AGENTS_PROFILS:138]; [AGENTS_PROFILS:138]Nom_Profil:2="Gestionnaire CODIS")
+		If (Records in selection:C76([AGENTS_PROFILS:138])=0)
+			CREATE RECORD:C68([AGENTS_PROFILS:138])
+			[AGENTS_PROFILS:138]Affectation:3:=$TIDAgent{$i}+"_"+$TIDUF{$j}
+			[AGENTS_PROFILS:138]Nom_Profil:2:="Gestionnaire CODIS"
+			SAVE RECORD:C53([AGENTS_PROFILS:138])
+		End if 
+		
+	End for 
+End for 
+
+
+
+
+
+
+
+

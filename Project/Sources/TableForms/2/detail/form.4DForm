@@ -1,0 +1,179 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"label_ID": {
+					"type": "text",
+					"text": "ID:",
+					"top": 10,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID": {
+					"type": "input",
+					"dataSource": "[AGENTS:2]ID:1",
+					"top": 10,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_id_individu": {
+					"type": "text",
+					"text": "id_individu:",
+					"top": 47,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_id_individu": {
+					"type": "input",
+					"dataSource": "[AGENTS:2]id_individu:2",
+					"top": 47,
+					"left": 120,
+					"width": 250,
+					"height": 170
+				},
+				"label_id_agent": {
+					"type": "text",
+					"text": "id_agent:",
+					"top": 237,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_id_agent": {
+					"type": "input",
+					"dataSource": "[AGENTS:2]id_agent:3",
+					"top": 237,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_id_connexion": {
+					"type": "text",
+					"text": "id_connexion:",
+					"top": 274,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_id_connexion": {
+					"type": "input",
+					"dataSource": "[AGENTS:2]id_connexion:4",
+					"top": 274,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_matricule": {
+					"type": "text",
+					"text": "matricule:",
+					"top": 311,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_matricule": {
+					"type": "input",
+					"dataSource": "[AGENTS:2]matricule:5",
+					"top": 311,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_statut": {
+					"type": "text",
+					"text": "statut:",
+					"top": 348,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_statut": {
+					"type": "input",
+					"dataSource": "[AGENTS:2]statut:6",
+					"top": 348,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_grade": {
+					"type": "text",
+					"text": "grade:",
+					"top": 385,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_grade": {
+					"type": "input",
+					"dataSource": "[AGENTS:2]grade:7",
+					"top": 385,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Valider",
+					"top": 417,
+					"left": 195,
+					"width": 116,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"action": "accept"
+				},
+				"Bouton1": {
+					"type": "button",
+					"text": "Annuler",
+					"top": 417,
+					"left": 75,
+					"width": 100,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				}
+			}
+		}
+	],
+	"geometryStamp": 7
+}

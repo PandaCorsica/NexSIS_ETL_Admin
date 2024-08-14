@@ -1,0 +1,241 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 30,
+	"markerBody": 60,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "listScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"background": {
+					"type": "rectangle",
+					"fill": "automatic",
+					"stroke": "transparent",
+					"top": 30,
+					"height": 30,
+					"left": 0,
+					"right": 2350
+				},
+				"label_ID": {
+					"type": "text",
+					"text": "ID",
+					"top": 10,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID": {
+					"type": "input",
+					"dataSource": "[LISTE_GARDE:44]ID:1",
+					"top": 37,
+					"left": 10,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_1": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 265
+				},
+				"label_matricule": {
+					"type": "text",
+					"text": "matricule",
+					"top": 10,
+					"left": 270,
+					"width": 100,
+					"height": 17
+				},
+				"field_matricule": {
+					"type": "input",
+					"dataSource": "[LISTE_GARDE:44]matricule:2",
+					"top": 37,
+					"left": 270,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_2": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 525
+				},
+				"label_etat_disponibilite": {
+					"type": "text",
+					"text": "etat_disponibilite",
+					"top": 10,
+					"left": 530,
+					"width": 100,
+					"height": 17
+				},
+				"field_etat_disponibilite": {
+					"type": "input",
+					"dataSource": "[LISTE_GARDE:44]etat_disponibilite:3",
+					"top": 37,
+					"left": 530,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_3": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 785
+				},
+				"label_date_debut": {
+					"type": "text",
+					"text": "date_debut",
+					"top": 10,
+					"left": 790,
+					"width": 100,
+					"height": 17
+				},
+				"field_date_debut": {
+					"type": "input",
+					"dataSource": "[LISTE_GARDE:44]date_debut:4",
+					"top": 37,
+					"left": 790,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_4": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1045
+				},
+				"label_date_fin": {
+					"type": "text",
+					"text": "date_fin",
+					"top": 10,
+					"left": 1050,
+					"width": 100,
+					"height": 17
+				},
+				"field_date_fin": {
+					"type": "input",
+					"dataSource": "[LISTE_GARDE:44]date_fin:5",
+					"top": 37,
+					"left": 1050,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_5": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1305
+				},
+				"label_id_uf": {
+					"type": "text",
+					"text": "id_uf",
+					"top": 10,
+					"left": 1310,
+					"width": 100,
+					"height": 17
+				},
+				"field_id_uf": {
+					"type": "input",
+					"dataSource": "[LISTE_GARDE:44]id_uf:6",
+					"top": 37,
+					"left": 1310,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_6": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1565
+				},
+				"label_delete": {
+					"type": "text",
+					"text": "delete",
+					"top": 10,
+					"left": 1570,
+					"width": 100,
+					"height": 17
+				},
+				"field_delete": {
+					"type": "input",
+					"dataSource": "[LISTE_GARDE:44]delete:7",
+					"top": 37,
+					"left": 1570,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_7": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1825
+				},
+				"label_etat_situation": {
+					"type": "text",
+					"text": "etat_situation",
+					"top": 10,
+					"left": 1830,
+					"width": 100,
+					"height": 17
+				},
+				"field_etat_situation": {
+					"type": "input",
+					"dataSource": "[LISTE_GARDE:44]etat_situation:8",
+					"top": 37,
+					"left": 1830,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_8": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2085
+				},
+				"label_statut": {
+					"type": "text",
+					"text": "statut",
+					"top": 10,
+					"left": 2090,
+					"width": 100,
+					"height": 17
+				},
+				"field_statut": {
+					"type": "input",
+					"dataSource": "[LISTE_GARDE:44]statut:9",
+					"top": 37,
+					"left": 2090,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				}
+			}
+		}
+	],
+	"geometryStamp": 6
+}

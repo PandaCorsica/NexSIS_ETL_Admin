@@ -1,0 +1,616 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 30,
+	"markerBody": 60,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "listScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"background": {
+					"type": "rectangle",
+					"fill": "automatic",
+					"stroke": "transparent",
+					"top": 30,
+					"height": 30,
+					"left": 0,
+					"right": 6510
+				},
+				"label_ID": {
+					"type": "text",
+					"text": "ID",
+					"top": 10,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]ID:1",
+					"top": 37,
+					"left": 10,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_1": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 265
+				},
+				"label_Matricule": {
+					"type": "text",
+					"text": "Matricule",
+					"top": 10,
+					"left": 270,
+					"width": 100,
+					"height": 17
+				},
+				"field_Matricule": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Matricule:2",
+					"top": 37,
+					"left": 270,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_2": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 525
+				},
+				"label_Nom": {
+					"type": "text",
+					"text": "Nom",
+					"top": 10,
+					"left": 530,
+					"width": 100,
+					"height": 17
+				},
+				"field_Nom": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Nom:3",
+					"top": 37,
+					"left": 530,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_3": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 785
+				},
+				"label_Nom_jeune_fille": {
+					"type": "text",
+					"text": "Nom_jeune_fille",
+					"top": 10,
+					"left": 790,
+					"width": 100,
+					"height": 17
+				},
+				"field_Nom_jeune_fille": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Nom_jeune_fille:4",
+					"top": 37,
+					"left": 790,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_4": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1045
+				},
+				"label_Prenom": {
+					"type": "text",
+					"text": "Prenom",
+					"top": 10,
+					"left": 1050,
+					"width": 100,
+					"height": 17
+				},
+				"field_Prenom": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Prenom:5",
+					"top": 37,
+					"left": 1050,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_5": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1305
+				},
+				"label_Date_naissance": {
+					"type": "text",
+					"text": "Date_naissance",
+					"top": 10,
+					"left": 1310,
+					"width": 100,
+					"height": 17
+				},
+				"field_Date_naissance": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Date_naissance:6",
+					"top": 37,
+					"left": 1310,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_6": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1565
+				},
+				"label_Pays": {
+					"type": "text",
+					"text": "Pays",
+					"top": 10,
+					"left": 1570,
+					"width": 100,
+					"height": 17
+				},
+				"field_Pays": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Pays:7",
+					"top": 37,
+					"left": 1570,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_7": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1825
+				},
+				"label_Code_pays": {
+					"type": "text",
+					"text": "Code_pays",
+					"top": 10,
+					"left": 1830,
+					"width": 100,
+					"height": 17
+				},
+				"field_Code_pays": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Code_pays:8",
+					"top": 37,
+					"left": 1830,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_8": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2085
+				},
+				"label_Lieu _naissance": {
+					"type": "text",
+					"text": "Lieu _naissance",
+					"top": 10,
+					"left": 2090,
+					"width": 100,
+					"height": 17
+				},
+				"field_Lieu _naissance": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Lieu _naissance:9",
+					"top": 37,
+					"left": 2090,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_9": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2345
+				},
+				"label_CP_naissance": {
+					"type": "text",
+					"text": "CP_naissance",
+					"top": 10,
+					"left": 2350,
+					"width": 100,
+					"height": 17
+				},
+				"field_CP_naissance": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]CP_naissance:10",
+					"top": 37,
+					"left": 2350,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_10": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2605
+				},
+				"label_Sexe": {
+					"type": "text",
+					"text": "Sexe",
+					"top": 10,
+					"left": 2610,
+					"width": 100,
+					"height": 17
+				},
+				"field_Sexe": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Sexe:11",
+					"top": 37,
+					"left": 2610,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_11": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2865
+				},
+				"label_Cle_Grade": {
+					"type": "text",
+					"text": "Cle_Grade",
+					"top": 10,
+					"left": 2870,
+					"width": 100,
+					"height": 17
+				},
+				"field_Cle_Grade": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Cle_Grade:12",
+					"top": 37,
+					"left": 2870,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_12": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3125
+				},
+				"label_Cle_Corps": {
+					"type": "text",
+					"text": "Cle_Corps",
+					"top": 10,
+					"left": 3130,
+					"width": 100,
+					"height": 17
+				},
+				"field_Cle_Corps": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Cle_Corps:13",
+					"top": 37,
+					"left": 3130,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_13": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3385
+				},
+				"label_Cle_Categorie": {
+					"type": "text",
+					"text": "Cle_Categorie",
+					"top": 10,
+					"left": 3390,
+					"width": 100,
+					"height": 17
+				},
+				"field_Cle_Categorie": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Cle_Categorie:14",
+					"top": 37,
+					"left": 3390,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_14": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3645
+				},
+				"label_Cle_Pers": {
+					"type": "text",
+					"text": "Cle_Pers",
+					"top": 10,
+					"left": 3650,
+					"width": 100,
+					"height": 17
+				},
+				"field_Cle_Pers": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Cle_Pers:15",
+					"top": 37,
+					"left": 3650,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_15": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3905
+				},
+				"label_Cle_Corps_Affec": {
+					"type": "text",
+					"text": "Cle_Corps_Affec",
+					"top": 10,
+					"left": 3910,
+					"width": 100,
+					"height": 17
+				},
+				"field_Cle_Corps_Affec": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Cle_Corps_Affec:16",
+					"top": 37,
+					"left": 3910,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_16": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 4165
+				},
+				"label_num_secu": {
+					"type": "text",
+					"text": "num_secu",
+					"top": 10,
+					"left": 4170,
+					"width": 100,
+					"height": 17
+				},
+				"field_num_secu": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]num_secu:17",
+					"top": 37,
+					"left": 4170,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_17": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 4425
+				},
+				"label_numOrdre": {
+					"type": "text",
+					"text": "numOrdre",
+					"top": 10,
+					"left": 4430,
+					"width": 100,
+					"height": 17
+				},
+				"field_numOrdre": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]numOrdre:18",
+					"top": 37,
+					"left": 4430,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_18": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 4685
+				},
+				"label_cadre": {
+					"type": "text",
+					"text": "cadre",
+					"top": 10,
+					"left": 4690,
+					"width": 100,
+					"height": 17
+				},
+				"field_cadre": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]cadre:19",
+					"top": 37,
+					"left": 4690,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_19": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 4945
+				},
+				"label_Cle_Service": {
+					"type": "text",
+					"text": "Cle_Service",
+					"top": 10,
+					"left": 4950,
+					"width": 100,
+					"height": 17
+				},
+				"field_Cle_Service": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Cle_Service:20",
+					"top": 37,
+					"left": 4950,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_20": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 5205
+				},
+				"label_Cle_Bureau": {
+					"type": "text",
+					"text": "Cle_Bureau",
+					"top": 10,
+					"left": 5210,
+					"width": 100,
+					"height": 17
+				},
+				"field_Cle_Bureau": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Cle_Bureau:21",
+					"top": 37,
+					"left": 5210,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_21": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 5465
+				},
+				"label_Cle_GptFct": {
+					"type": "text",
+					"text": "Cle_GptFct",
+					"top": 10,
+					"left": 5470,
+					"width": 100,
+					"height": 17
+				},
+				"field_Cle_GptFct": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Cle_GptFct:22",
+					"top": 37,
+					"left": 5470,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_22": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 5725
+				},
+				"label_Cle_Pole": {
+					"type": "text",
+					"text": "Cle_Pole",
+					"top": 10,
+					"left": 5730,
+					"width": 100,
+					"height": 17
+				},
+				"field_Cle_Pole": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Cle_Pole:23",
+					"top": 37,
+					"left": 5730,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_23": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 5985
+				},
+				"label_Cle_Direction": {
+					"type": "text",
+					"text": "Cle_Direction",
+					"top": 10,
+					"left": 5990,
+					"width": 100,
+					"height": 17
+				},
+				"field_Cle_Direction": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Cle_Direction:24",
+					"top": 37,
+					"left": 5990,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_24": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 6245
+				},
+				"label_Debut_CIS": {
+					"type": "text",
+					"text": "Debut_CIS",
+					"top": 10,
+					"left": 6250,
+					"width": 100,
+					"height": 17
+				},
+				"field_Debut_CIS": {
+					"type": "input",
+					"dataSource": "[IMPORT_INDIVIDUS:17]Debut_CIS:25",
+					"top": 37,
+					"left": 6250,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				}
+			}
+		}
+	],
+	"geometryStamp": 4,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche CRSS</title>
+    <link rel="icon" href="images/sis2a.png" type="Logo SIS2A">
+    <link rel="stylesheet" href="stylescrss.css">
+    <script src="scriptcrss.js" defer></script>
+</head>
+<body>
+    <div class="entete">
+        <div class="bloc-entete gauche">
+            <img src="images/nexsis_rond.png" alt="Logo Gauche">
+        </div>
+        <div class="bloc-entete centre">
+            <h1>RECHERCHE CRSS</h1>
+        </div>
+        <div class="bloc-entete droite">
+            <img src="images/sis2a.png" alt="Logo Droite">
+        </div>
+    </div>
+    <div class="conteneur-formulaire">
+        <!-- Ligne de formulaire pour la date et l'heure de début -->
+        <div class="ligne-formulaire">
+            <label for="date-debut">Date de début</label>
+            <input type="date" id="date-debut">
+        </div>
+        <!-- Ligne de formulaire pour la date et l'heure de fin -->
+        <div class="ligne-formulaire">
+            <label for="date-fin">Date de fin</label>
+            <input type="date" id="date-fin">
+        </div>
+        <!-- Ligne de formulaire pour la sélection de la commune -->
+        <div class="ligne-formulaire">
+            <label for="centre-select">Centre</label>
+            <select id="centre-select">
+                <option value="">Sélectionner un centre</option>
+            </select>
+        </div>
+        <!-- Ligne de formulaire pour l'état CRSS -->
+        <div class="ligne-formulaire">
+            <label for="etat-crss-select">État CRSS</label>
+            <select id="etat-crss-select">
+                <option value="">Sélectionner un état CRSS</option>
+                <option value="redige">Rédigé</option>
+                <option value="a_rediger">À rédiger</option>
+                <option value="redige_modifications">Rédigé avec modifications</option>
+                <option value="brouillon">Brouillon</option>
+            </select>
+        </div>
+        <!-- Ligne de formulaire pour l'état de validation -->
+        <div class="ligne-formulaire">
+            <label for="etat-validation-select">État validation</label>
+            <select id="etat-validation-select">
+                <option value="">Sélectionner un état de validation</option>
+                <option value="validee">Validée</option>
+                <option value="pas_validee">Pas validée</option>
+            </select>
+        </div>
+        <!-- Ligne de formulaire pour l'état de paiement -->
+        <div class="ligne-formulaire">
+            <label for="etat-paiement-select">État paiement</label>
+            <select id="etat-paiement-select">
+                <option value="">Sélectionner un état de paiement</option>
+                <option value="a_payer">À payer</option>
+                <option value="paye">Payé</option>
+                <option value="refuse">Refusé</option>
+            </select>
+        </div>
+        <!-- Conteneur pour le bouton de recherche -->
+        <div class="conteneur-bouton">
+            <button onclick="rechercherDonnees()">Rechercher</button>
+        </div>
+    </div>
+    <!-- Conteneur pour les résultats de la recherche -->
+    <div id="resultats-recherche" class="resultats-recherche"></div>
+</body>
+</html>

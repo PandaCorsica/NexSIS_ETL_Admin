@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interventions SIS 2A</title>
+    <link rel="icon" href="images/sis2a.png" type="Logo SIS2A">
+    <link rel="stylesheet" href="stylesinter.css">
+    <script src="scriptinter.js" defer></script>
+</head>
+<body>
+    <div class="entete">
+        <div class="bloc-entete gauche">
+            <img src="images/nexsis_rond.png" alt="Logo Gauche">
+        </div>
+        <div class="bloc-entete centre">
+
+            <h1>INTERVENTIONS SIS 2A</h1>
+        </div>
+        <div class="bloc-entete droite">
+            <img src="images/sis2a.png" alt="Logo Droite">
+        </div>
+    </div>
+    <div class="conteneur-formulaire">
+        <div class="ligne-formulaire">
+            <label for="numero-intervention">Numéro d'intervention</label>
+            <input type="text" id="numero-intervention">
+        </div>
+        <div class="ligne-formulaire">
+            <label for="date-debut">Date de début</label>
+            <input type="date" id="date-debut">
+            <input type="time" id="heure-debut">
+        </div>
+        <div class="ligne-formulaire">
+            <label for="date-fin">Date de fin</label>
+            <input type="date" id="date-fin">
+            <input type="time" id="heure-fin">
+        </div>
+        <div class="ligne-formulaire">
+            <label for="commune-select">Commune</label>
+            <select id="commune-select">
+                <option value="">Sélectionner une commune</option>
+            </select>
+        </div>
+        <div class="conteneur-bouton">
+            <button onclick="rechercherDonnees()">Rechercher</button>
+        </div>
+    </div>
+    <div id="conteneur-resume"></div>
+    <div id="conteneur-bandeaux"></div>
+</body>
+</html>

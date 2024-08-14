@@ -1,0 +1,176 @@
+{
+	"bars": [
+		{
+			"id": 1,
+			"name": "Barre #1",
+			"items": [
+				{
+					"link": 32001
+				},
+				{
+					"link": 32002
+				},
+				{
+					"link": 32003
+				}
+			]
+		}
+	],
+	"menus": [
+		{
+			"link": 32001,
+			"title": ":xliff:CommonMenuFile",
+			"items": [
+				{
+					"title": "Paramétrage",
+					"method": "Parametrage"
+				},
+				{
+					"title": "Ligne 5",
+					"isSeparator": true
+				},
+				{
+					"title": "Interface traitement",
+					"method": "Interface Traitement complet"
+				},
+				{
+					"title": "Ligne 3",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Recuperations Antibia",
+					"method": "Recuperations_Antibia"
+				},
+				{
+					"title": "Ligne 4",
+					"isSeparator": true
+				},
+				{
+					"title": "Correspondance grades",
+					"method": "Correspondance_Grades"
+				},
+				{
+					"title": "Corrspondance statuts",
+					"method": "Correspondance_Statuts"
+				},
+				{
+					"title": "Correspondance types UF",
+					"method": "Correspondance_Types"
+				},
+				{
+					"title": "Correspondance competences",
+					"method": "Correspondance_Compet"
+				},
+				{
+					"title": "Coordonnées UF",
+					"method": "Correspondance_GeoUF"
+				},
+				{
+					"title": "Ligne 12",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Integre cadres",
+					"method": "integre_cadres"
+				},
+				{
+					"title": "Ligne 10",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Generation des fichiers",
+					"method": "Generate_Files"
+				},
+				{
+					"title": "Ligne 2",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "integre listes de garde",
+					"method": "Integre_listes_garde"
+				},
+				{
+					"title": "Generation Listes de garde",
+					"method": "Traite_Fichier_Liste_Garde"
+				},
+				{
+					"title": "Ligne 11",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": ":xliff:CommonMenuItemQuit",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 32002,
+			"title": ":xliff:CommonMenuEdit",
+			"items": [
+				{
+					"title": ":xliff:CommonMenuItemUndo",
+					"shortcutAccel": true,
+					"shortcutKey": "Z",
+					"action": "undo"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":xliff:CommonMenuItemCut",
+					"shortcutAccel": true,
+					"shortcutKey": "X",
+					"action": "cut"
+				},
+				{
+					"title": ":xliff:CommonMenuItemCopy",
+					"shortcutAccel": true,
+					"shortcutKey": "C",
+					"action": "copy"
+				},
+				{
+					"title": ":xliff:CommonMenuItemPaste",
+					"shortcutAccel": true,
+					"shortcutKey": "V",
+					"action": "paste"
+				},
+				{
+					"title": ":xliff:CommonMenuItemClear",
+					"action": "clear"
+				},
+				{
+					"title": ":xliff:CommonMenuItemSelectAll",
+					"shortcutAccel": true,
+					"shortcutKey": "A",
+					"action": "selectAll"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":xliff:CommonMenuItemShowClipboard",
+					"action": "showClipboard"
+				}
+			]
+		},
+		{
+			"link": 32003,
+			"title": ":xliff:CommonMenuMode",
+			"items": [
+				{
+					"title": ":xliff:CommonMenuItemDesign",
+					"action": "design"
+				}
+			]
+		}
+	]
+}

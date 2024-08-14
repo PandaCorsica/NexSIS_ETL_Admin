@@ -1,0 +1,632 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 30,
+	"markerBody": 60,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "listScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"background": {
+					"type": "rectangle",
+					"fill": "automatic",
+					"stroke": "transparent",
+					"top": 30,
+					"height": 30,
+					"left": 0,
+					"right": 6770
+				},
+				"label_id": {
+					"type": "text",
+					"text": "id",
+					"top": 10,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_id": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]id:1",
+					"top": 37,
+					"left": 10,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_1": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 265
+				},
+				"label_code_moyen": {
+					"type": "text",
+					"text": "code_moyen",
+					"top": 10,
+					"left": 270,
+					"width": 100,
+					"height": 17
+				},
+				"field_code_moyen": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]code_moyen:2",
+					"top": 37,
+					"left": 270,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_2": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 525
+				},
+				"label_nom_moyen": {
+					"type": "text",
+					"text": "nom_moyen",
+					"top": 10,
+					"left": 530,
+					"width": 100,
+					"height": 17
+				},
+				"field_nom_moyen": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]nom_moyen:3",
+					"top": 37,
+					"left": 530,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_3": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 785
+				},
+				"label_type_moyen": {
+					"type": "text",
+					"text": "type_moyen",
+					"top": 10,
+					"left": 790,
+					"width": 100,
+					"height": 17
+				},
+				"field_type_moyen": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]type_moyen:4",
+					"top": 37,
+					"left": 790,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_4": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1045
+				},
+				"label_famille_moyen": {
+					"type": "text",
+					"text": "famille_moyen",
+					"top": 10,
+					"left": 1050,
+					"width": 100,
+					"height": 17
+				},
+				"field_famille_moyen": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]famille_moyen:5",
+					"top": 37,
+					"left": 1050,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_5": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1305
+				},
+				"label_type_categorie": {
+					"type": "text",
+					"text": "type_categorie",
+					"top": 10,
+					"left": 1310,
+					"width": 100,
+					"height": 17
+				},
+				"field_type_categorie": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]type_categorie:6",
+					"top": 37,
+					"left": 1310,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_6": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1565
+				},
+				"label_code_structure": {
+					"type": "text",
+					"text": "code_structure",
+					"top": 10,
+					"left": 1570,
+					"width": 100,
+					"height": 17
+				},
+				"field_code_structure": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]code_structure:7",
+					"top": 37,
+					"left": 1570,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_7": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1825
+				},
+				"label_code_parent": {
+					"type": "text",
+					"text": "code_parent",
+					"top": 10,
+					"left": 1830,
+					"width": 100,
+					"height": 17
+				},
+				"field_code_parent": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]code_parent:8",
+					"top": 37,
+					"left": 1830,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_8": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2085
+				},
+				"label_nom_uf": {
+					"type": "text",
+					"text": "nom_uf",
+					"top": 10,
+					"left": 2090,
+					"width": 100,
+					"height": 17
+				},
+				"field_nom_uf": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]nom_uf:9",
+					"top": 37,
+					"left": 2090,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_9": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2345
+				},
+				"label_est_mobilisable": {
+					"type": "text",
+					"text": "est_mobilisable",
+					"top": 10,
+					"left": 2350,
+					"width": 100,
+					"height": 17
+				},
+				"field_est_mobilisable": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]est_mobilisable:10",
+					"top": 37,
+					"left": 2350,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_10": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2605
+				},
+				"label_mobilisable": {
+					"type": "text",
+					"text": "mobilisable",
+					"top": 10,
+					"left": 2610,
+					"width": 100,
+					"height": 17
+				},
+				"field_mobilisable": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]mobilisable:11",
+					"top": 37,
+					"left": 2610,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_11": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2865
+				},
+				"label_code_activite": {
+					"type": "text",
+					"text": "code_activite",
+					"top": 10,
+					"left": 2870,
+					"width": 100,
+					"height": 17
+				},
+				"field_code_activite": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]code_activite:12",
+					"top": 37,
+					"left": 2870,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_12": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3125
+				},
+				"label_code_etat_disponibilite": {
+					"type": "text",
+					"text": "code_etat_disponibilite",
+					"top": 10,
+					"left": 3130,
+					"width": 100,
+					"height": 17
+				},
+				"field_code_etat_disponibilite": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]code_etat_disponibilite:13",
+					"top": 37,
+					"left": 3130,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_13": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3385
+				},
+				"label_code_etat_situation": {
+					"type": "text",
+					"text": "code_etat_situation",
+					"top": 10,
+					"left": 3390,
+					"width": 100,
+					"height": 17
+				},
+				"field_code_etat_situation": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]code_etat_situation:14",
+					"top": 37,
+					"left": 3390,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_14": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3645
+				},
+				"label_createdAt": {
+					"type": "text",
+					"text": "createdAt",
+					"top": 10,
+					"left": 3650,
+					"width": 100,
+					"height": 17
+				},
+				"field_createdAt": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]createdAt:18",
+					"top": 37,
+					"left": 3650,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_15": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3905
+				},
+				"label_updatedAt": {
+					"type": "text",
+					"text": "updatedAt",
+					"top": 10,
+					"left": 3910,
+					"width": 100,
+					"height": 17
+				},
+				"field_updatedAt": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]updatedAt:19",
+					"top": 37,
+					"left": 3910,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_16": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 4165
+				},
+				"label_geolocalizedAt": {
+					"type": "text",
+					"text": "geolocalizedAt",
+					"top": 10,
+					"left": 4170,
+					"width": 100,
+					"height": 17
+				},
+				"field_geolocalizedAt": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]geolocalizedAt:20",
+					"top": 37,
+					"left": 4170,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_17": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 4425
+				},
+				"label_armement_en_cours": {
+					"type": "text",
+					"text": "armement_en_cours",
+					"top": 10,
+					"left": 4430,
+					"width": 100,
+					"height": 17
+				},
+				"field_armement_en_cours": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]armement_en_cours:21",
+					"top": 37,
+					"left": 4430,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_18": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 4685
+				},
+				"label_type_liaison": {
+					"type": "text",
+					"text": "type_liaison",
+					"top": 10,
+					"left": 4690,
+					"width": 100,
+					"height": 17
+				},
+				"field_type_liaison": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]type_liaison:22",
+					"top": 37,
+					"left": 4690,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_19": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 4945
+				},
+				"label_code_sis": {
+					"type": "text",
+					"text": "code_sis",
+					"top": 10,
+					"left": 4950,
+					"width": 100,
+					"height": 17
+				},
+				"field_code_sis": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]code_sis:23",
+					"top": 37,
+					"left": 4950,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_20": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 5205
+				},
+				"label_source": {
+					"type": "text",
+					"text": "source",
+					"top": 10,
+					"left": 5210,
+					"width": 100,
+					"height": 17
+				},
+				"field_source": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]source:24",
+					"top": 37,
+					"left": 5210,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_21": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 5465
+				},
+				"label_debut": {
+					"type": "text",
+					"text": "debut",
+					"top": 10,
+					"left": 5470,
+					"width": 100,
+					"height": 17
+				},
+				"field_debut": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]debut:25",
+					"top": 37,
+					"left": 5470,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_22": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 5725
+				},
+				"label_fin": {
+					"type": "text",
+					"text": "fin",
+					"top": 10,
+					"left": 5730,
+					"width": 100,
+					"height": 17
+				},
+				"field_fin": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]fin:26",
+					"top": 37,
+					"left": 5730,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_23": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 5985
+				},
+				"label_id_operation": {
+					"type": "text",
+					"text": "id_operation",
+					"top": 10,
+					"left": 5990,
+					"width": 100,
+					"height": 17
+				},
+				"field_id_operation": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]id_operation:27",
+					"top": 37,
+					"left": 5990,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_24": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 6245
+				},
+				"label_date_reception": {
+					"type": "text",
+					"text": "date_reception",
+					"top": 10,
+					"left": 6250,
+					"width": 100,
+					"height": 17
+				},
+				"field_date_reception": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]date_reception:28",
+					"top": 37,
+					"left": 6250,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_25": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 6505
+				},
+				"label_date_alimentation": {
+					"type": "text",
+					"text": "date_alimentation",
+					"top": 10,
+					"left": 6510,
+					"width": 100,
+					"height": 17
+				},
+				"field_date_alimentation": {
+					"type": "input",
+					"dataSource": "[sgo_statuts_des_moyens:130]date_alimentation:29",
+					"top": 37,
+					"left": 6510,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				}
+			}
+		}
+	],
+	"geometryStamp": 1
+}

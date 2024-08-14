@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="10">
+	<com.4d>
+		<web>
+			<standalone_server>
+				<rest launch_at_startup="true"/>
+				<configuration publish_at_startup="true">
+					<hosts>
+						<host home_page="" id="0" name="default"/>
+					</hosts>
+				</configuration>
+			</standalone_server>
+			<remote>
+				<configuration publish_at_startup="true"/>
+			</remote>
+		</web>
+		<server>
+			<network>
+				<options publication_name="Donnees NexSIS"/>
+			</network>
+		</server>
+		<sql>
+			<publication allow_flash_player_requests="false"/>
+		</sql>
+	</com.4d>
+</preferences>

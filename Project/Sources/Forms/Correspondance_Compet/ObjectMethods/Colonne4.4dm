@@ -1,0 +1,17 @@
+$evt:=Form event code:C388
+
+Case of 
+	: ($evt=Sur double clic:K2:5)
+		CREATE SET:C116([CORRESPONDANCE_COMPETENCES:41]; "select")
+		If (Records in set:C195("$CompetChoisis")#0)
+			USE SET:C118("$CompetChoisis")
+			USE SET:C118("$CompetRef")
+			APPLY TO SELECTION:C70([CORRESPONDANCE_COMPETENCES:41]; [CORRESPONDANCE_COMPETENCES:41]CodeCompet_Antibia:3:=[IMPORT_COMPETENCES:39]cle_competence:2)
+			APPLY TO SELECTION:C70([CORRESPONDANCE_COMPETENCES:41]; [CORRESPONDANCE_COMPETENCES:41]Code_Antibia_Clair:5:=[IMPORT_COMPETENCES:39]code:3)
+			ALL RECORDS:C47([CORRESPONDANCE_COMPETENCES:41])
+			ALL RECORDS:C47([IMPORT_COMPETENCES:39])
+			USE SET:C118("select")
+		Else 
+			ALERT:C41("Vous devez choisir une competence")
+		End if 
+End case 

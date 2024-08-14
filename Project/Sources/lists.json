@@ -1,0 +1,17 @@
+{
+	"Vrai/faux": {
+		"editable": true,
+		"items": [
+			{
+				"text": "TRUE",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "FALSE",
+				"ref": 2,
+				"editable": true
+			}
+		]
+	}
+}

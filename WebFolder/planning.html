@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Planning</title>
+    <link rel="icon" href="images/sis2a.png" type="Logo SIS2A">
+    <link rel="stylesheet" href="stylesplanning.css">
+    <script src="scriptplanning.js"></script>
+</head>
+<body>
+    <header class="entete">
+        <div class="bloc-entete gauche">
+            <img src="images/nexsis_rond.png" alt="Logo Gauche">
+        </div>
+        <div class="bloc-entete centre">
+            <h1>Plannings NexSIS</h1>
+        </div>
+        <div class="bloc-entete droite">
+            <img src="images/sis2a.png" alt="Logo Droite">
+        </div>
+    </header>
+
+<!-- Ligne d'alerte -->
+     <div class="alerte">
+          Attention ! Cette page est juste un outil. Seules les informations saisies dans NexSIS font foi.
+	  </div>
+
+<!-- Ligne de formulaire pour la sélection de la commune -->
+     <div class="ligne-formulaire">
+          <label for="centre-select">Centre</label>
+          <select onchange="changeCentre()" id="centre-select">
+                <option value="">Sélectionner un centre</option>
+          </select>
+     </div>
+
+
+<div id="overlay" onclick="fermerPopup()"></div>
+<div id="popup">
+    <p></p>
+</div>
+
+<div id="title">
+    <span class="icon" onclick="semainePrecedente()">⬅️</span>
+    <span id="table-title"></span>
+    <span class="icon" onclick="semaineSuivante()">➡️</span>
+</div>
+
+<table id="dataTable">
+    <thead>
+        <tr id="headerRow1"></tr>
+        <tr id="headerRow2"></tr>
+        <tr id="headerRow3"></tr>
+    </thead>
+    <tbody>
+        <!-- Le contenu sera injecté ici par JavaScript -->
+    </tbody>
+</table>
+
+
+</body>
+</html>

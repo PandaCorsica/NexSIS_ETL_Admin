@@ -1,0 +1,5 @@
+//%attributes = {}
+ALL RECORDS:C47([IMPORT_MOYENS:43])
+DISTINCT VALUES:C339([IMPORT_MOYENS:43]vecteur:3; $TTypes)
+
+

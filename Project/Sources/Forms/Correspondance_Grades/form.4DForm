@@ -1,0 +1,316 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"text": "Correspondance des grades Antibia -> NexSIS",
+					"top": 28,
+					"left": 387,
+					"width": 303,
+					"height": 16
+				},
+				"LBGradesAntibia": {
+					"type": "listbox",
+					"left": 34,
+					"top": 102,
+					"width": 325,
+					"height": 396,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "currentSelection",
+					"table": "IMPORT_GRADE",
+					"dataSource": "",
+					"visibility": "visible",
+					"highlightSet": "$GradesChoisis",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Entête1"
+							},
+							"name": "Colonne1",
+							"footer": {
+								"name": "Pied1"
+							},
+							"visibility": "hidden",
+							"dataSource": "[IMPORT_GRADE:25]ID:1",
+							"width": 57
+						},
+						{
+							"header": {
+								"name": "Entête2",
+								"text": "Libelle"
+							},
+							"name": "Colonne2",
+							"footer": {
+								"name": "Pied2"
+							},
+							"dataSource": "[IMPORT_GRADE:25]libelle:3"
+						},
+						{
+							"header": {
+								"name": "Entête9",
+								"text": "Correspondance"
+							},
+							"name": "Colonne9",
+							"footer": {
+								"name": "Pied9"
+							},
+							"dataSource": "[IMPORT_GRADE:25]code_Ref:5"
+						}
+					]
+				},
+				"LBGradesNexSIS": {
+					"type": "listbox",
+					"left": 401,
+					"top": 150,
+					"width": 947,
+					"height": 352,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "currentSelection",
+					"table": "REFERENTIEL_GRADES",
+					"selectionMode": "single",
+					"highlightSet": "$GradesRef",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Entête3"
+							},
+							"name": "Colonne3",
+							"footer": {
+								"name": "Pied3"
+							},
+							"dataSource": "[REFERENTIEL_GRADES:28]ID:1",
+							"width": 65,
+							"visibility": "hidden",
+							"events": [
+								"onDoubleClick"
+							]
+						},
+						{
+							"header": {
+								"name": "Entête4",
+								"text": "Libelle"
+							},
+							"name": "Colonne4",
+							"footer": {
+								"name": "Pied4"
+							},
+							"dataSource": "[REFERENTIEL_GRADES:28]Libelle:3",
+							"method": "ObjectMethods/Colonne4.4dm",
+							"events": [
+								"onDoubleClick"
+							],
+							"width": 198
+						},
+						{
+							"header": {
+								"name": "Entête5",
+								"text": "Filiere"
+							},
+							"name": "Colonne5",
+							"footer": {
+								"name": "Pied5"
+							},
+							"dataSource": "[REFERENTIEL_GRADES:28]Filiere:4",
+							"method": "ObjectMethods/Colonne5.4dm",
+							"events": [
+								"onDoubleClick"
+							],
+							"width": 169
+						},
+						{
+							"header": {
+								"name": "Entête6",
+								"text": "Structure"
+							},
+							"name": "Colonne6",
+							"footer": {
+								"name": "Pied6"
+							},
+							"dataSource": "[REFERENTIEL_GRADES:28]Structure:5",
+							"method": "ObjectMethods/Colonne6.4dm",
+							"events": [
+								"onDoubleClick"
+							],
+							"width": 175
+						},
+						{
+							"header": {
+								"name": "Entête7",
+								"text": "Statut"
+							},
+							"name": "Colonne7",
+							"footer": {
+								"name": "Pied7"
+							},
+							"dataSource": "[REFERENTIEL_GRADES:28]Statut:6",
+							"method": "ObjectMethods/Colonne7.4dm",
+							"events": [
+								"onDoubleClick"
+							],
+							"width": 168
+						},
+						{
+							"header": {
+								"name": "Entête8",
+								"text": "Categorie"
+							},
+							"name": "Colonne8",
+							"footer": {
+								"name": "Pied8"
+							},
+							"dataSource": "[REFERENTIEL_GRADES:28]Categorie:7",
+							"method": "ObjectMethods/Colonne8.4dm",
+							"events": [
+								"onDoubleClick"
+							]
+						}
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "GRADES ANTIBIA",
+					"top": 70,
+					"left": 74,
+					"width": 176,
+					"height": 16
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "GRADES NEXSIS",
+					"top": 75,
+					"left": 648,
+					"width": 203,
+					"height": 16
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Fermer",
+					"top": 518,
+					"left": 496,
+					"width": 194,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				},
+				"Texte3": {
+					"type": "text",
+					"text": "Filière :",
+					"top": 114,
+					"left": 401,
+					"width": 49,
+					"height": 16
+				},
+				"Popup Liste déroulante": {
+					"type": "dropdown",
+					"left": 455,
+					"top": 110,
+					"width": 121,
+					"height": 24,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "TFiliere",
+					"method": "ObjectMethods/Popup Liste déroulante.4dm"
+				},
+				"Texte4": {
+					"type": "text",
+					"text": "Structure :",
+					"top": 115,
+					"left": 601,
+					"width": 72,
+					"height": 16
+				},
+				"Popup Liste déroulante1": {
+					"type": "dropdown",
+					"left": 670,
+					"top": 111,
+					"width": 121,
+					"height": 24,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "TStructure",
+					"method": "ObjectMethods/Popup Liste déroulante1.4dm"
+				},
+				"Texte5": {
+					"type": "text",
+					"text": "Categorie :",
+					"top": 116,
+					"left": 831,
+					"width": 76,
+					"height": 16
+				},
+				"Popup Liste déroulante2": {
+					"type": "dropdown",
+					"left": 910,
+					"top": 114,
+					"width": 121,
+					"height": 24,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "TCategorie",
+					"method": "ObjectMethods/Popup Liste déroulante2.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 23,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

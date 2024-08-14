@@ -1,0 +1,204 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"text": "Correspondance des Types de centres Antibia -> NexSIS",
+					"top": 34,
+					"left": 179,
+					"width": 364,
+					"height": 16
+				},
+				"LBGradesAntibia": {
+					"type": "listbox",
+					"left": 34,
+					"top": 102,
+					"width": 348,
+					"height": 396,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "currentSelection",
+					"table": "IMPORT_TYPE",
+					"dataSource": "",
+					"visibility": "visible",
+					"highlightSet": "$TypesChoisis",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Entête1"
+							},
+							"name": "Colonne1",
+							"footer": {
+								"name": "Pied1"
+							},
+							"visibility": "hidden",
+							"dataSource": "[IMPORT_TYPE:23]ID:1",
+							"width": 57
+						},
+						{
+							"header": {
+								"name": "Entête2",
+								"text": "Libelle"
+							},
+							"name": "Colonne2",
+							"footer": {
+								"name": "Pied2"
+							},
+							"dataSource": "[IMPORT_TYPE:23]type:3"
+						},
+						{
+							"header": {
+								"name": "Entête9",
+								"text": "Correspondance"
+							},
+							"name": "Colonne9",
+							"footer": {
+								"name": "Pied9"
+							},
+							"dataSource": "[IMPORT_TYPE:23]code_Ref:4"
+						},
+						{
+							"header": {
+								"name": "Entête5",
+								"text": "Type Dept"
+							},
+							"name": "Colonne5",
+							"dataSource": "[IMPORT_TYPE:23]type_Dept:5",
+							"footer": {
+								"name": "Pied5"
+							}
+						}
+					]
+				},
+				"LBGradesNexSIS": {
+					"type": "listbox",
+					"left": 402,
+					"top": 102,
+					"width": 450,
+					"height": 396,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "currentSelection",
+					"table": "REFERENTIEL_TYPES",
+					"selectionMode": "single",
+					"highlightSet": "$TypesRef",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Entête3"
+							},
+							"name": "Colonne3",
+							"footer": {
+								"name": "Pied3"
+							},
+							"dataSource": "[REFERENTIEL_TYPES:33]ID:1",
+							"width": 65,
+							"visibility": "hidden",
+							"events": [
+								"onDoubleClick"
+							]
+						},
+						{
+							"header": {
+								"name": "Entête4",
+								"text": "Libelle"
+							},
+							"name": "Colonne4",
+							"footer": {
+								"name": "Pied4"
+							},
+							"dataSource": "[REFERENTIEL_TYPES:33]Libelle:3",
+							"method": "ObjectMethods/Colonne4.4dm",
+							"events": [
+								"onDoubleClick"
+							],
+							"width": 367
+						}
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "TYPES ANTIBIA",
+					"top": 70,
+					"left": 74,
+					"width": 176,
+					"height": 16
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "TYPES NEXSIS",
+					"top": 78,
+					"left": 474,
+					"width": 203,
+					"height": 16
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Fermer",
+					"top": 518,
+					"left": 496,
+					"width": 194,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				}
+			}
+		}
+	],
+	"geometryStamp": 32,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

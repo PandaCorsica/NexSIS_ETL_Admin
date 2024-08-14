@@ -1,0 +1,448 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 30,
+	"markerBody": 60,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "window title",
+	"destination": "listScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"background": {
+					"type": "rectangle",
+					"fill": "automatic",
+					"stroke": "transparent",
+					"top": 30,
+					"height": 30,
+					"left": 0,
+					"right": 4690
+				},
+				"label_ID": {
+					"type": "text",
+					"text": "ID",
+					"top": 10,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]ID:1",
+					"top": 37,
+					"left": 10,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_1": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 265
+				},
+				"label_Categorie": {
+					"type": "text",
+					"text": "Categorie",
+					"top": 10,
+					"left": 270,
+					"width": 100,
+					"height": 17
+				},
+				"field_Categorie": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Categorie:2",
+					"top": 37,
+					"left": 270,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_2": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 525
+				},
+				"label_Code_Centre": {
+					"type": "text",
+					"text": "Code_Centre",
+					"top": 10,
+					"left": 530,
+					"width": 100,
+					"height": 17
+				},
+				"field_Code_Centre": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Code_Centre:3",
+					"top": 37,
+					"left": 530,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_3": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 785
+				},
+				"label_Traite": {
+					"type": "text",
+					"text": "Traite",
+					"top": 10,
+					"left": 790,
+					"width": 100,
+					"height": 17
+				},
+				"field_Traite": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Traite:4",
+					"top": 37,
+					"left": 790,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_4": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1045
+				},
+				"label_Matricule": {
+					"type": "text",
+					"text": "Matricule",
+					"top": 10,
+					"left": 1050,
+					"width": 100,
+					"height": 17
+				},
+				"field_Matricule": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Matricule:5",
+					"top": 37,
+					"left": 1050,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_5": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1305
+				},
+				"label_Nb_Repas": {
+					"type": "text",
+					"text": "Nb_Repas",
+					"top": 10,
+					"left": 1310,
+					"width": 100,
+					"height": 17
+				},
+				"field_Nb_Repas": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Nb_Repas:6",
+					"top": 37,
+					"left": 1310,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_6": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1565
+				},
+				"label_Remarques": {
+					"type": "text",
+					"text": "Remarques",
+					"top": 10,
+					"left": 1570,
+					"width": 100,
+					"height": 17
+				},
+				"field_Remarques": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Remarques:7",
+					"top": 37,
+					"left": 1570,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_7": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 1825
+				},
+				"label_Repas": {
+					"type": "text",
+					"text": "Repas",
+					"top": 10,
+					"left": 1830,
+					"width": 100,
+					"height": 17
+				},
+				"field_Repas": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Repas:8",
+					"top": 37,
+					"left": 1830,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_8": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2085
+				},
+				"label_Jour_Debut": {
+					"type": "text",
+					"text": "Jour_Debut",
+					"top": 10,
+					"left": 2090,
+					"width": 100,
+					"height": 17
+				},
+				"field_Jour_Debut": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Jour_Debut:9",
+					"top": 37,
+					"left": 2090,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_9": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2345
+				},
+				"label_Heure_Debut": {
+					"type": "text",
+					"text": "Heure_Debut",
+					"top": 10,
+					"left": 2350,
+					"width": 100,
+					"height": 17
+				},
+				"field_Heure_Debut": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Heure_Debut:10",
+					"top": 37,
+					"left": 2350,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_10": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2605
+				},
+				"label_Type_Activite": {
+					"type": "text",
+					"text": "Type_Activite",
+					"top": 10,
+					"left": 2610,
+					"width": 100,
+					"height": 17
+				},
+				"field_Type_Activite": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Type_Activite:11",
+					"top": 37,
+					"left": 2610,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_11": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 2865
+				},
+				"label_Duree": {
+					"type": "text",
+					"text": "Duree",
+					"top": 10,
+					"left": 2870,
+					"width": 100,
+					"height": 17
+				},
+				"field_Duree": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Duree:12",
+					"top": 37,
+					"left": 2870,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_12": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3125
+				},
+				"label_Annee": {
+					"type": "text",
+					"text": "Annee",
+					"top": 10,
+					"left": 3130,
+					"width": 100,
+					"height": 17
+				},
+				"field_Annee": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Annee:13",
+					"top": 37,
+					"left": 3130,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_13": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3385
+				},
+				"label_Mois": {
+					"type": "text",
+					"text": "Mois",
+					"top": 10,
+					"left": 3390,
+					"width": 100,
+					"height": 17
+				},
+				"field_Mois": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Mois:14",
+					"top": 37,
+					"left": 3390,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_14": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3645
+				},
+				"label_Jour_Fin": {
+					"type": "text",
+					"text": "Jour_Fin",
+					"top": 10,
+					"left": 3650,
+					"width": 100,
+					"height": 17
+				},
+				"field_Jour_Fin": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Jour_Fin:15",
+					"top": 37,
+					"left": 3650,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_15": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 3905
+				},
+				"label_Heure_Fin": {
+					"type": "text",
+					"text": "Heure_Fin",
+					"top": 10,
+					"left": 3910,
+					"width": 100,
+					"height": 17
+				},
+				"field_Heure_Fin": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]Heure_Fin:16",
+					"top": 37,
+					"left": 3910,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_16": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 4165
+				},
+				"label_TSDebut": {
+					"type": "text",
+					"text": "TSDebut",
+					"top": 10,
+					"left": 4170,
+					"width": 100,
+					"height": 17
+				},
+				"field_TSDebut": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]TSDebut:17",
+					"top": 37,
+					"left": 4170,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				},
+				"line_17": {
+					"type": "line",
+					"top": 0,
+					"height": 60,
+					"left": 4425
+				},
+				"label_TSFin": {
+					"type": "text",
+					"text": "TSFin",
+					"top": 10,
+					"left": 4430,
+					"width": 100,
+					"height": 17
+				},
+				"field_TSFin": {
+					"type": "input",
+					"dataSource": "[PLANNINGS:156]TSFin:18",
+					"top": 37,
+					"left": 4430,
+					"width": 250,
+					"height": 17,
+					"borderStyle": "none"
+				}
+			}
+		}
+	],
+	"geometryStamp": 5
+}

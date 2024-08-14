@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails Intervention</title>
+    <link rel="icon" href="images/sis2a.png" type="Logo SIS2A">
+    <link rel="stylesheet" href="stylesficheinter.css">
+    <script src="scriptfichedetailinter.js" defer></script>
+</head>
+<body>
+	<div>
+		<input type="hidden" id='idcrss' value=<!--4DTEXT [crss_traitement]id_cr_operation--> />
+		<input type="hidden" id='idinter' value=<!--4DTEXT [DONNEES_BRQ]idOperation--> />
+		<input type="hidden" id='ufmoyen' value=<!--4DTEXT [crss_traitement]uf_moyen--> />
+	</div>
+   
+    <header class="entete">
+        <div class="bloc-entete gauche">
+            <img src="images/nexsis_rond.png" alt="Logo Gauche">
+        </div>
+        <div class="bloc-entete centre">
+            <h1>FICHE INTERVENTION </h1>
+        </div>
+        <div class="bloc-entete droite">
+            <img src="images/sis2a.png" alt="Logo Droite">
+        </div>
+    </header>
+
+    <div class="conteneur-informations">
+        <div class="partie-gauche">
+            <p>Numéro d'Intervention : <!--4DTEXT [DONNEES_BRQ]numinter--></p>
+            <p>Date / Heure : <!--4DTEXT Chaîne([DONNEES_BRQ]dateInter; Interne date court)--> / <!--4DTEXT Chaîne([DONNEES_BRQ]heureInter; h mn)--></p>
+            <p>Motif : <!--4DTEXT [DONNEES_BRQ]motif--></p>
+            <p>Commune : <!--4DTEXT [DONNEES_BRQ]commune--></p>
+            <p>Adresse : <!--4DTEXT [DONNEES_BRQ]adresse--></p>
+        </div>
+        <div class="partie-droite">
+            <p>Numéro d'appel : <!--4DTEXT [sga_origine_appel]numero_appelant--></p>
+            <p>Date/heure de réception de l'appel : <!--4DHTMLVAR [sgo_affaire]date_premiere_alerte--></p>
+            <p>Date/heure de début d’intervention : <!--4DHTMLVAR [sgo_operation]date_creation--></p>
+            <p>Date/heure de fin d’intervention : <!--4DHTMLVAR [sgo_operation]date_fin--></p>
+        </div>
+    </div>
+
+    <div class="conteneur-details">
+        <table id="details-table" border="1">
+            <thead>
+                <tr>
+                    <th>Moyen(s) engagé(s)</th>
+                    <th>Alerte</th>
+                    <th>Départ</th>
+                    <th>SLL</th>
+                    <th>Transport CH</th>
+                    <th>Arrivée CH</th>
+                    <th>Retour CI</th>
+                    <th>Rentré au CI</th>
+                </tr>
+            </thead>
+            <tbody>
+			<!--#4dloop [crss_engin]-->
+                <tr>
+                    <td><!--#4dtext [crss_engin]nom_engin--> <!--#4dtext [crss_engin]nom_unite_fonctionnelle--></td>
+                    <td><!--#4dtext convertit_chaineDate_DateHeure([crss_engin]horaire_alerte_initial)--></td>
+                    <td><!--#4dtext convertit_chaineDate_DateHeure([crss_engin]horaire_parti_initial)--></td>
+                    <td><!--#4dtext convertit_chaineDate_DateHeure([crss_engin]horaire_sur_les_lieux_initial)--></td>
+                    <td><!--#4dtext convertit_chaineDate_DateHeure([crss_engin]horaire_en_transit_hopital_init)--></td>
+                    <td><!--#4dtext convertit_chaineDate_DateHeure([crss_engin]horaire_arrive_hopital_initial)--></td>
+                    <td><!--#4dtext convertit_chaineDate_DateHeure([crss_engin]horaire_retour_vers_uf_initial)--></td>
+                    <td><!--#4dtext convertit_chaineDate_DateHeure([crss_engin]horaire_rentre_a_uf_initial)--></td>
+                </tr>
+			<!--#4dendloop-->
+			</tbody>
+        </table>
+        
+        <table id="autres-services-table" border="1">
+            <thead>
+                <tr>
+                    <th>Autre(s) service(s)</th>
+                    <th>À contacter</th>
+                    <th>Informé</th>
+                    <th>Départ</th>
+                    <th>SLL</th>
+                    <th>Retour</th>
+                    <th>Rentré</th>
+                </tr>
+            </thead>
+            <tbody>
+ 			<!--#4dloop [crss_intervenant]-->
+               <tr>
+                    <td><!--#4dtext [crss_intervenant]nom--></td>
+                    <td></td>
+                    <td><!--#4dtext [crss_intervenant]prevenu--></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+ 			<!--#4dendloop-->
+           </tbody>
+        </table>
+
+        <div class="conteneur-bouton">
+            <button id="btn-crss" onclick="ouvrircrss()">CRSS</button>
+            <button id="btn-main-courante"  onclick="ouvririnter()">Main Courante</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,494 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Texte": {
+					"type": "text",
+					"text": "Préparation données NexSIS",
+					"top": 29,
+					"left": 206,
+					"width": 388,
+					"height": 16,
+					"fontSize": 14,
+					"fontWeight": "bold"
+				},
+				"Case à cocher": {
+					"type": "checkbox",
+					"text": "Recuperation individus",
+					"top": 68,
+					"left": 52,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher.4dm"
+				},
+				"Case à cocher1": {
+					"type": "checkbox",
+					"text": "Recuperation CIS",
+					"top": 154,
+					"left": 52,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher1.4dm"
+				},
+				"Case à cocher2": {
+					"type": "checkbox",
+					"text": "Recuperation groupements",
+					"top": 181,
+					"left": 52,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher2.4dm"
+				},
+				"Case à cocher3": {
+					"type": "checkbox",
+					"text": "Recuperation Categories",
+					"top": 105,
+					"left": 52,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher3.4dm"
+				},
+				"Case à cocher4": {
+					"type": "checkbox",
+					"text": "Recuperation Types UF",
+					"top": 215,
+					"left": 52,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher4.4dm"
+				},
+				"Case à cocher5": {
+					"type": "checkbox",
+					"text": "Recuperation Grades",
+					"top": 263,
+					"left": 52,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher5.4dm"
+				},
+				"Case à cocher6": {
+					"type": "checkbox",
+					"text": "Equivalence Grades",
+					"top": 288,
+					"left": 52,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher6.4dm"
+				},
+				"Case à cocher7": {
+					"type": "checkbox",
+					"text": "Recuperation liste competences",
+					"top": 315,
+					"left": 52,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher7.4dm"
+				},
+				"Case à cocher8": {
+					"type": "checkbox",
+					"text": "Equivalence competences",
+					"top": 342,
+					"left": 52,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher8.4dm"
+				},
+				"Case à cocher9": {
+					"type": "checkbox",
+					"text": "Recuperation communes",
+					"top": 405,
+					"left": 52,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher9.4dm"
+				},
+				"Case à cocher10": {
+					"type": "checkbox",
+					"text": "Creation des UF",
+					"top": 78,
+					"left": 348,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher10.4dm"
+				},
+				"Case à cocher11": {
+					"type": "checkbox",
+					"text": "Generation fichier UF",
+					"top": 78,
+					"left": 618,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher11.4dm"
+				},
+				"Case à cocher12": {
+					"type": "checkbox",
+					"text": "Affectation des GeoUF",
+					"top": 107,
+					"left": 348,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher12.4dm"
+				},
+				"Case à cocher13": {
+					"type": "checkbox",
+					"text": "Generation fichier GeoUF",
+					"top": 107,
+					"left": 618,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher13.4dm"
+				},
+				"Case à cocher14": {
+					"type": "checkbox",
+					"text": "Traitement Individus",
+					"top": 135,
+					"left": 348,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher14.4dm"
+				},
+				"Case à cocher15": {
+					"type": "checkbox",
+					"text": "Traitement Agents",
+					"top": 162,
+					"left": 348,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher15.4dm"
+				},
+				"Case à cocher16": {
+					"type": "checkbox",
+					"text": "Generation fichier Disponibilites",
+					"top": 283,
+					"left": 337,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher16.4dm"
+				},
+				"Case à cocher17": {
+					"type": "checkbox",
+					"text": "Generation fichiers emetteurs",
+					"top": 310,
+					"left": 337,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher17.4dm"
+				},
+				"Case à cocher18": {
+					"type": "checkbox",
+					"text": "Generation fichiers Moyens",
+					"top": 269,
+					"left": 618,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher18.4dm"
+				},
+				"Case à cocher19": {
+					"type": "checkbox",
+					"text": "Generation fichiers Piquets",
+					"top": 347,
+					"left": 337,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher19.4dm"
+				},
+				"Case à cocher20": {
+					"type": "checkbox",
+					"text": "Correspondance Types UF",
+					"top": 240,
+					"left": 52,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher20.4dm"
+				},
+				"Case à cocher21": {
+					"type": "checkbox",
+					"text": "Correspondance statuts",
+					"top": 132,
+					"left": 52,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher21.4dm"
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Fermer",
+					"top": 518,
+					"left": 381,
+					"width": 141,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				},
+				"Case à cocher22": {
+					"type": "checkbox",
+					"text": "Generation fichiers Radios",
+					"top": 326,
+					"left": 624,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher22.4dm"
+				},
+				"Case à cocher23": {
+					"type": "checkbox",
+					"text": "Generation fichier habilitations",
+					"top": 426,
+					"left": 624,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher23.4dm"
+				},
+				"Case à cocher24": {
+					"type": "checkbox",
+					"text": "Verifie données Radios",
+					"top": 298,
+					"left": 624,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher24.4dm"
+				},
+				"Case à cocher25": {
+					"type": "checkbox",
+					"text": "Verifie liste de garde (après import)",
+					"top": 221,
+					"left": 618,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher25.4dm"
+				},
+				"Case à cocher27": {
+					"type": "checkbox",
+					"text": "Generation fichier Individus",
+					"top": 135,
+					"left": 618,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher27.4dm"
+				},
+				"Case à cocher28": {
+					"type": "checkbox",
+					"text": "Generation fichier Agent",
+					"top": 162,
+					"left": 618,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher28.4dm"
+				},
+				"Case à cocher29": {
+					"type": "checkbox",
+					"text": "Generation fichier Competences",
+					"top": 192,
+					"left": 618,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher29.4dm"
+				},
+				"Ligne": {
+					"type": "line",
+					"top": 64,
+					"left": 322,
+					"width": 1,
+					"height": 445
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 68,
+					"left": 586,
+					"width": 1,
+					"height": 431
+				},
+				"Case à cocher30": {
+					"type": "checkbox",
+					"text": "Creation centres (Agent-Individu)",
+					"top": 199,
+					"left": 348,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher30.4dm"
+				},
+				"Case à cocher31": {
+					"type": "checkbox",
+					"text": "Recuperation competences Agents",
+					"top": 376,
+					"left": 52,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher31.4dm"
+				},
+				"Case à cocher32": {
+					"type": "checkbox",
+					"text": "Affectation agent à profil",
+					"top": 396,
+					"left": 624,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher32.4dm"
+				},
+				"Case à cocher33": {
+					"type": "checkbox",
+					"text": "Creation des profils",
+					"top": 373,
+					"left": 624,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher33.4dm"
+				},
+				"Case à cocher34": {
+					"type": "checkbox",
+					"text": "Generation fichier affectations",
+					"top": 482,
+					"left": 618,
+					"width": 250,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Case à cocher34.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 198,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

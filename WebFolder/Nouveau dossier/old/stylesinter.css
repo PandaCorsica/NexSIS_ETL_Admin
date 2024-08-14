@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Styles pour l'en-tête */
+.entete {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour chaque bloc de l'en-tête (gauche, centre, droite) */
+.bloc-entete {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc-entete.gauche,
+.bloc-entete.droite {
+    max-width: 100px;
+}
+
+.bloc-entete img {
+    max-width: 100%;
+    height: auto;
+}
+
+.entete h1 {
+    text-align: center;
+}
+
+/* Styles pour le conteneur du formulaire */
+.conteneur-formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Styles pour chaque ligne du formulaire */
+.ligne-formulaire {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Styles pour les étiquettes des champs de formulaire */
+.ligne-formulaire label {
+    min-width: 150px;
+}
+
+/* Styles pour les champs de formulaire (input, select) */
+.ligne-formulaire input,
+.ligne-formulaire select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Styles spécifiques pour les champs de type date, heure et le select */
+.ligne-formulaire input[type="date"],
+.ligne-formulaire input[type="time"],
+.ligne-formulaire select {
+    width: 150px;
+}
+
+/* Styles pour le conteneur des boutons */
+.conteneur-bouton {
+    text-align: center;
+}
+
+/* Styles pour les boutons */
+.conteneur-bouton button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Styles pour les boutons au survol */
+.conteneur-bouton button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour les bandeaux */
+.bandeau {
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    cursor: pointer; /* Ajouter un curseur pour montrer que le bandeau est cliquable */
+}
+
+/* Styles pour la ligne principale des bandeaux */
+.bandeau .ligne-principale {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Styles pour les informations à gauche du bandeau */
+.bandeau .infos-gauche {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Styles pour les informations à droite du bandeau */
+.bandeau .infos-droite {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+/* Styles pour le motif dans les bandeaux */
+.bandeau .motif {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styles pour le tableau */
+#details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les en-têtes du tableau */
+#details-table th {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Styles pour les cellules du tableau */
+#details-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Styles pour les lignes du tableau */
+#details-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Styles pour les lignes du tableau au survol */
+#details-table tr:hover {
+    background-color: #ddd;
+}

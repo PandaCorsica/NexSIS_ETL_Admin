@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulletin Recapitulatif Quotidien (BRQ)</title>
+    <link rel="icon" href="images/sis2a.png" type="Logo SIS2A">
+    <link rel="stylesheet" href="stylesbrq.css">
+    <script src="scriptbrq.js" defer></script>
+</head>
+<body onload="definirDateHeureParDefaut()">
+    <div class="entete">
+        <div class="bloc-entete gauche">
+            <img src="images/nexsis_rond.png" alt="Logo Gauche">
+        </div>
+        <div class="bloc-entete centre">
+            <h1>BULLETIN RÉCAPITULATIF QUOTIDIEN (BRQ)</h1>
+        </div>
+
+        <div class="bloc-entete droite">
+            <img src="images/sis2a.png" alt="Logo Droite">
+        </div>
+    </div>
+    <!-- Conteneur pour le formulaire de sélection des dates et heures -->
+    <div class="conteneur-formulaire">
+        <!-- Ligne du formulaire pour la date et l'heure de début -->
+        <div class="ligne-formulaire">
+            <label for="date-debut">Date de début</label>
+            <input type="date" id="date-debut">
+            <input type="time" id="heure-debut">
+        </div>
+        <!-- Ligne du formulaire pour la date et l'heure de fin -->
+        <div class="ligne-formulaire">
+            <label for="date-fin">Date de fin</label>
+            <input type="date" id="date-fin">
+            <input type="time" id="heure-fin">
+        </div>
+        <!-- Bouton pour lancer la recherche de données -->
+        <div class="conteneur-bouton">
+            <button onclick="rechercherDonnees()">Rechercher</button>
+        </div>
+    </div>
+    <!-- Conteneur pour le résumé des données recherchées -->
+    <div id="conteneur-resume"></div>
+    <!-- Conteneur pour le bandeau récapitulatif -->
+    <div id="bandeau-recapitulatif"></div>
+    <!-- Conteneur pour les filtres appliqués aux données -->
+    <div id="conteneur-filtre"></div>
+    <!-- Conteneur pour les bandeaux informatifs -->
+    <div id="conteneur-bandeaux"></div>
+    <!-- Conteneur pour le commentaire général, caché par défaut -->
+    <div id="conteneur-commentaire-general" style="display: none;">
+        <h2>Commentaire Général</h2>
+        <textarea id="commentaire-general" placeholder="Saisir votre commentaire ici..."></textarea>
+        <button onclick="validerCommentaireGeneral()">Valider</button>
+    </div>
+    <!-- Popup pour l'intervention particulière -->
+    <div id="popup" class="popup">
+        <div class="popup-contenu">
+            <!-- Bouton pour fermer la popup -->
+            <span class="fermer" onclick="fermerPopup()">&times;</span>
+            <h2 class="titre-popup">Intervention particulière</h2>
+            <textarea id="commentaire" placeholder="Saisir votre commentaire ici..."></textarea>
+            <div class="popup-boutons">
+                <!-- Boutons pour valider ou annuler le commentaire -->
+                <button onclick="validerCommentaire()">Valider</button>
+                <button onclick="annulerCommentaire()">Effacer</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
